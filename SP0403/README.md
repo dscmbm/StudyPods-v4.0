@@ -10,3 +10,11 @@
  2.Manoj Bhatt
  3.Yatharth Kanojiya
  4.Umar Deen
+ # How to Run?
+ system should be linux as operating system the virtual environment .
+  1.cd SPO403
+  2.source bin/activate 
+       Activates the virtual environment
+  3. ./bin/python3 Main.py
+  
+   
