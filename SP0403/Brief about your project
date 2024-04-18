@@ -1,1 +1,8 @@
+# FaceMeter : FACE RECOGNITION and DISTANCE ESTIMATION
+# POD03
+1.Project Estimate the distance of the face and also recognize it 
+2.Using the library dlib genuinly building on the system is time consuming and this is the base library for FACE RECOGNITION.
+3.Distance is estimated and totally depend on the camera.
+4.Multiple face distance is bit laggy and refresh after some time but face is recognized immediatly.
+here by we attatch a video
 
