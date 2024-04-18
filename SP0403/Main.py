@@ -57,7 +57,7 @@ class FaceRecognition:
         distance = (real_face_width * Focal_Length)/face_width_in_frame 
 
         # return the distance 
-        return distance 
+        return distance/10
 
 
     def face_data(self,image): 
@@ -91,7 +91,7 @@ class FaceRecognition:
 
 
         print(self.known_face_encodings,self.known_face_names)
-        video_capture = cv2.VideoCapture(0)
+        video_capture = cv2.VideoCapture(1)#if gives error change 1 to 0
          
 
         # reading reference_image from directory 
