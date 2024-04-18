@@ -12,7 +12,7 @@
  3.Yatharth Kanojiya
  4.Umar Deen
  # Applications
-   1. Is builts a way a module means in term of oops and you can use it in your project.
+   1. Is builts a way a module means in term of oops and you can use it in your project.Mean you can import the main.py module and use it
    2. Person follower robot
    3. Security
    4. For Differently abled person
