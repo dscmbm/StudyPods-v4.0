@@ -4,6 +4,7 @@ We used a dataset from the Roboflow universe for training and our training was d
 
 # What it does?
 The trained yolo weight is capable of recognizing faces which have worn mask and which haven't. So it is basically a mask detection system where it will tell if the person is wearing mask or not. It also tells if the person is wearing the mask incorrectly.
+# !We were not able to upload the best.pt file(the result of out training) because it exceeds the limiting size of files on github. But we have uploaded some results of some tests we did on the model. These are image files from1 to 4.jpeg. To use the model in your pc, you have to clone the official yolov5 repository and install modules mentioned in it's requirements.txt.
 
 # Codes- 
 To input image as source - python3 detect.py --weights best.pt --source <image path here>
