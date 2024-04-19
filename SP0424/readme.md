@@ -71,7 +71,7 @@ SP0424 is an amazing team built by the efforts of its team members and the suppo
 
 ## Weekly Logs
 
-Weekly Logs is an important activity planned by DSC MBM to motivate participants to note their progress and prepare the log for future generation to plan accordingly.
+Weekly Logs is an important activity planned by our team to motivate us to note their progress and prepare the log for future generation to plan accordingly.
 ### Week-1: Basic Python<br>
 => Learned Python from scratch.<br> 
 => Practised problems on Codewars daily <br>
@@ -102,13 +102,14 @@ For many videos, the main content of the videos is only 50-60% of the total leng
 3. Summerization : We are using extractive summarization using SpaCy. Other techniques like TextRank, which is also available in SpaCy, or neural network-based models like BERT, GPT or summarization algorithms including Gensim, NLTK and TF-IDF can be used for more advanced summarization task. <br>
 
 <h2> Installations </h2>
-!pip install -q transformers </b2> 
-!pip install -q youtube_transcript_api </b2>
-pip install youtube-transcript-api </b2>
-pip install -U spacy </b2>
- 
+<ul>
+<li>!pip install -q transformers</li> </b2> 
+<li>!pip install -q youtube_transcript_api</li> </b2>
+<li>pip install youtube-transcript-api</li> </b2>
+<li>pip install -U spacy</li> </b2>
+</ul>
 
-<h2> Examples </h2>
+<h2> Example Videos that can be used for Transcript </h2>
  youtube_video = "https://www.youtube.com/watch?v=0p0o5cmgLdE </br>
  youtube_video ="https://www.youtube.com/watch?v=lrEkYscgbqE&t=1s </br>
  Any youtube video can be used. (the video should be strictly in English only irrsepective of length).<br>
@@ -117,7 +118,15 @@ python spacy jupyter notebook github git
 
 ## Technolgy used 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)   ![PyCharm](https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green) ![Notepad++](https://img.shields.io/badge/Notepad++-90E59A.svg?style=for-the-badge&logo=notepad%2b%2b&logoColor=black) ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)  ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)  ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)![Static Badge](https://img.shields.io/badge/YOUTUBE-%23FF0000?style=for-the-badge&logoColor=%23FF0000)
+<h1> Image of Project Working </h1>
+<h3> for this example we used https://www.youtube.com/watch?v=lrEkYscgbqE&t=1s this video  </h3>
+<h5> the transcript we obtained:: </h5>
 
+![image](https://github.com/HerculesDS/StudyPods-v4.0/assets/157140203/1895c0c2-32f7-4c3d-8a80-3d8be9bd6583)
+
+<h5> the Summary we obtained::</h5>
+
+![image](https://github.com/HerculesDS/StudyPods-v4.0/assets/157140203/c85b0a75-df51-4bf6-b3e0-fff2db89daaf)
 
   
 
@@ -131,7 +140,6 @@ python spacy jupyter notebook github git
 <li><b>Text-to-Speech</b>: Converting summaries into audio format, making the content more accessible. </br></li>
 <li><b>Customizable Summary Length</b>: Allows users to select the desired summary length. </br></li>
 <li><b>Interactive Web-application</b>: We are working on both backend and frontend development using Streamlit. The application will provide an easy-to-use interface for all functionalities.  </br>
-This section contains the details about the  project made by the team.
 </ol>
 
 
