@@ -4,7 +4,7 @@
 
 <h1 align="center"> SP0424 </h1>
 
-This is the folder for team SP0424 participating in StudyPods v4.0 by Google Developers Student Club MBM.
+This is the folder for team SP0424 participating in StudyPods v4.0 by Google Developers Student Club MBM. 
 
 <!-- <details open="open">
   <summary>Table of Contents</summary>
