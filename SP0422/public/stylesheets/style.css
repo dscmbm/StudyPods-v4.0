@@ -1,0 +1,207 @@
+.navigation {
+    position: relative;
+    width: 750px;
+    max-width: 750px;
+    background: transparent;
+    border: 9px solid var(--clr);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: inset -3px -3px 7px #0883ee73, inset 3px 3px 5px rgba(94, 104, 121, .288);
+}
+
+.navigation .chat_container{
+    overflow: auto;
+    height: calc(93vh - 55px - 2em - 25px * 2 - .5em - 3em);
+}
+
+.nav{
+    display: flex;
+    width: 700px;
+}
+.nav h1 .c {
+    color: rgb(240, 234, 235);
+    font-size: 40px;
+}
+
+.nav h1 .H {
+    color: rgb(250, 239, 240);
+    font-size: 40px;
+}
+
+.nav h1 .a {
+    color: rgb(239, 232, 233);
+    font-size: 40px;
+}
+
+.nav h1 .t {
+    color: rgb(244, 240, 240);
+    font-size: 40px;
+}
+
+.nav h1 .dash {
+    color: rgb(250, 250, 246);
+    font-size: 40px;
+}
+
+.nav h1 .h {
+    color: rgb(231, 6, 6);
+    font-size: 40px;
+}
+
+.nav h1 .u {
+    color: rgb(246, 32, 9);
+    font-size: 40px;
+}
+
+.nav h1 .b {
+    color: red;
+    font-size: 40px;
+}
+.navigation .sending_panel{
+    border-radius: 12px;
+    padding: 0 1em;
+    height: 55px;
+}
+
+.navigation .sending_panel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #000;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    min-height: 100vh;
+}
+
+
+.stars {
+    position: absolute;
+    background: #FFE194;
+    top: -40vmin;
+    width: .7vmin;
+    height: .7vmin;
+    border-radius: 50%;
+    filter: blur(.2vmin);
+    box-shadow: 20vmin 2vmin 0 #FFE194, 10vmin -20vmin 0 #FFE194,
+        20vmin 50vmin 0 #FFE194, -30vmin 10vmin 0 #FFE194,
+        10vmin 70vmin 0 #FFE194, -50vmin 30vmin 0 #FFE194,
+        20vmin 50vmin 0 #FFE194, -30vmin 10vmin 0 #FFE194,
+        -20vmin -40vmin 0 #FFE194, -40vmin 120vmin 0 #FFE194,
+        -20vmin -40vmin 0 #FFE194, -40vmin 120vmin 0 #FFE194,
+        10vmin -40vmin 0 #FFE194, 5vmin 12vmin 0 #FFE194,
+        80vmin 50vmin 0 #FFE194, -30vmin 10vmin 0 #FFE194,
+        40vmin 70vmin 0 #FFE194, -10vmin 100vmin 0 #FFE194,
+        10vmin 110vmin 0 #FFE194, 40vmin 130vmin 0 #FFE194,
+        -20vmin 40vmin 0 #FFE194, -10vmin 60vmin 0 #FFE194,
+        50vmin 120vmin 0 #FFE194;
+    animation: twinkle .01s infinite;
+}
+.input{
+    width: 90%;
+    height: 40px;
+    display: flex;
+    margin-right: 10px;
+    margin-bottom: 7px;
+    background: none;
+    font-size: larger;
+    color: aliceblue;
+    border-radius: 18px;
+    
+}
+
+#sendBtn{
+    display: inline-block;
+    border: 1px #000;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: #8147fc;
+}
+
+.stars::before {
+    content: "";
+    position: absolute;
+    background: #FFE194;
+    width: .3vmin;
+    height: .3vmin;
+    border-radius: 50%;
+    box-shadow: -40vmin 10vmin 0 #FFE194, 30vmin 10vmin 0 #FFE194,
+        50vmin 10vmin 0 #FFE194, -10vmin 80vmin 0 #FFE194,
+        -40vmin 70vmin 0 #FFE194, 20vmin 120vmin 0 #FFE194,
+        10vmin 150vmin 0 #FFE194, -30vmin 90vmin 0 #FFE194,
+        40vmin 20vmin 0 #FFE194, 60vmin 100vmin 0 #FFE194,
+        10vmin 120vmin 0 #FFE194, 30vmin 60vmin 0 #FFE194,
+        20vmin 40vmin 0 #FFE194, -45vmin -15vmin 0 #FFE194;
+    animation: twinkle .1s infinite;
+}
+
+@keyframes twinkle {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+.message-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    overflow: auto;
+
+    &::before {
+        content: '';
+        margin-bottom: auto;
+    }
+
+    /* //msg list */
+    .message-list {
+        align-self: flex-start;
+        max-width: 70%;
+    }
+
+    .msg {
+        background: transparent;
+        box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .1);
+        padding: 10px 5px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        font-size: 1.4em;
+        border: 1px solid aliceblue;
+        color: aliceblue;
+    }
+
+    .me {
+        align-self: flex-end;
+        background:transparent;
+        border: 1px solid rgb(179, 175, 175);        
+        color:aliceblue;
+    }
+   
+}
+
+.senderName {
+    text-align: left;
+    color: #999;
+    margin-top: -2px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-Room</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+
+</head>
+
+<body>
+    <div class="stars"></div>
+
+    <nav class="nav">
+        
+        <h1>
+            <span class="c">C</span>
+            <span class="H">H</span>
+            <span class="a">A</span>
+            <span class="t">T</span>
+            <span class="dash"></span>
+            <span class="h">h</span>
+            <span class="u">u</span>
+            <span class="b">b</span>
+        </h1>
+    </nav>
+
+    <div class="stars"></div>
+    
+    <div class="navigation">
+        <div class="chat_container">
+            <div class="message-wrap" id="all-messages"></div>
+        </div>
+
+        <div class="sending_panel"> <input class="input" id="message" placeholder="  Type a message..." />
+            <div class="sending_container">
+                <button id="sendBtn" type="submit" class="sendBtn"> .
+                    <svg width="35" height="35" viewBox="4 -4 23 27" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+  
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.12.0/qs.min.js"
+    integrity="sha512-7guIquo9is/MQs1wfLZyVViTlsvrIoHdnSzoFmPvPMDpqjL2fvDqcVKpaZ9PS3Sbf6DLBRUUZ5X3jcQ/wotWow=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+
+
+
+
+
+    const currentTime = new Date();
+    // Get the current hour, minute, and second
+    let hours = currentTime.getHours();
+    let minutes = currentTime.getMinutes();
+
+    let Minutes = minutes < 10 ? '0' + minutes : minutes;
+
+    const seconds = currentTime.getSeconds();
+    // Determine AM or PM
+    const meridiem = hours >= 12 ? 'PM' : 'AM';
+
+    // Convert hours to 12-hour format
+    hours = hours % 12 || 12; // 0 should be converted to 12 for 12-hour format
+
+    // Format the time as a string
+    const formattedTime = `${hours}:${Minutes} ${meridiem}`;
+
+
+    const socket = io();
+    const sendBtn = document.getElementById("sendBtn");
+    const goodBtn = document.getElementById("goodBtn");
+    const messageInput = document.getElementById("message");
+    const allMessages = document.getElementById("all-messages");
+  
+    // getting username and roomname from  url
+    const urlParams = new URLSearchParams(window.location.search);
+    const userName = urlParams.get('userName');
+    const roomName = urlParams.get('roomName');
+    let userList = 0;
+
+    const getMessages = async () => {
+        // getting saved messages
+        await axios.post('/msg/getmessages', { userName: userName, roomName: roomName }).then(function (res) {
+            let oldMessages = [];
+            oldMessages = res.data.result;
+            oldMessages.forEach(function (value) {
+                console.log(value);
+                if (value.userName == userName) {
+
+                    const m = Object.assign(document.createElement("div"), { className: "message-list me msg" });
+                    m.innerHTML = `<p class="senderName"> ${value.userName}  <span>&nbsp;&nbsp; ${value.formattedTime}</span></p>
+                        <p>${value.message}</p>`;
+                    allMessages.appendChild(m);
+                    allMessages.scrollTop = allMessages.scrollHeight
+                } else {
+                    const p = Object.assign(document.createElement("div"), { className: "message-list msg" });
+                    p.innerHTML = `<p class="senderName"> ${value.userName}  <span>&nbsp;&nbsp; ${value.formattedTime}</span></p>
+                                   <p>${value.message}</p>`;
+                    allMessages.appendChild(p);
+                    allMessages.scrollTop = allMessages.scrollHeight
+                }
+            });
+        }).catch(function (error) {
+            console.error('Error making Get request:', error);
+        });
+    }
+
+
+    //websocket handling
+    socket.on("connect", (e) => {
+
+
+        console.log("my id -", socket.id);
+    })
+
+    socket.on("receive-message", (messageData) => {
+
+        const p = Object.assign(document.createElement("div"), { className: "message-list msg" });
+        p.innerHTML = `<p class="senderName">${messageData.data.userName} <span> &nbsp;&nbsp;${messageData.time}</span></p>
+        <p>${messageData.data.message}</p>`;
+        allMessages.appendChild(p);
+        allMessages.scrollTop = allMessages.scrollHeight
+    });
+
+
+    sendBtn.addEventListener("click", async (e) => {
+        const message = messageInput.value;
+console.log(formattedTime)
+        // save messagge api calling by axios http request.
+        await axios.post('/msg/message', { formattedTime,message, roomName, userName })
+            .catch(function (error) {
+                console.error('Error making POST request:', error);
+            });
+
+
+        socket.emit("message", { message, roomName, userName });
+
+        const m = Object.assign(document.createElement("div"), { className: "message-list me msg" ,id:"msg" });
+        m.innerHTML = `<p class="senderName">${userName}  <span>&nbsp;&nbsp; ${formattedTime}</span></p>
+        <p>${message}</p>`;
+        allMessages.appendChild(m);
+        allMessages.scrollIntoView = allMessages.scrollHeight
+               document.getElementById('message').value = '';
+        document.getElementById('message').focus() = '';
+
+    })
+
+    document.addEventListener('keypress', function (event) {
+        // Check if the key pressed is Enter (key code 13)
+        if (event.key === 'Enter' || event.keyCode === 13) {
+            // Your code to execute when Enter is pressed
+
+            const message = messageInput.value;
+                     // save messagge api calling by axios http request.
+            axios.post('/msg/message', { message, roomName, userName, formattedTime })
+                .catch(function (error) {
+                    console.error('Error making POST request:', error);
+                });
+
+            socket.emit("message", { userName, roomName, message });
+
+            const m = Object.assign(document.createElement("div"), { className: "message-list me msg" });
+            m.innerHTML = `<p class="senderName">${userName}  <span>  &nbsp; &nbsp; ${formattedTime}</span></p>
+        <p>${message}</p>`;
+            allMessages.appendChild(m);
+            allMessages.scrollTop = allMessages.scrollHeight
+        
+            document.getElementById('message').value = '';
+            document.getElementById('message').focus() = '';
+
+        }
+    });
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        getMessages();
+        socket.emit("join-room", roomName);
+    });
+
+
+
+
+</script>
+
+
+
+
+</html>

@@ -1,0 +1,620 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr: #222327;
+}
+
+body {
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navigation {
+    position: relative;
+    margin: 40px;
+    width: 800px;
+    height: 86.5px;
+    background: transparent;
+    border: 9px solid var(--clr);
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: inset -3px -3px 7px #0883ee73, inset 3px 3px 5px rgba(94, 104, 121, .288);
+}
+
+.navigation h1 .c {
+    color: rgb(240, 234, 235);
+    font-size: 80px;
+}
+
+.navigation h1 .H {
+    color: rgb(250, 239, 240);
+    font-size: 80px;
+}
+
+.navigation h1 .a {
+    color: rgb(239, 232, 233);
+    font-size: 80px;
+}
+
+.navigation h1 .t {
+    color: rgb(244, 240, 240);
+        font-size: 80px;
+}
+
+.navigation h1 .dash {
+    color: rgb(250, 250, 246);
+    font-size: 80px;
+}
+
+.navigation h1 .h {
+    color: rgb(231, 6, 6);
+    font-size: 80px;
+}
+
+.navigation h1 .u {
+    color: rgb(246, 32, 9);
+    font-size: 80px;
+}
+
+.navigation h1 .b {
+    color: red;
+    font-size: 80px;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 3;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--clr);
+    z-index: 5;
+}
+
+.navigation ul li:hover a .icon {
+    transform: translateY(-32px);
+}
+
+.navigation ul li a .text {
+    position: absolute;
+    color: var(--clr);
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+
+
+.indicator {
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    background: #4267b2;
+    border-radius: 50%;
+    border: 6px solid var(--clr);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.indicator::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 1px -10px 0 0 var(--clr);
+}
+
+.indicator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: -1px -10px 0 0 var(--clr);
+}
+
+.navigation ul li:nth-child(1):active~.indicator {
+    transform: translateX(calc(70px * 0));
+    box-shadow: 0 0 15px #1da1f2;
+    background: #1da1f2;
+}
+
+.navigation ul li:nth-child(2):hover~.indicator {
+    transform: translateX(calc(70px * 1));
+    box-shadow: 0 0 15px #c724b1;
+    background: #c724b1;
+}
+
+.navigation ul li:nth-child(3):hover~.indicator {
+    transform: translateX(calc(70px * 2));
+    box-shadow: 0 0 15px #ffff00;
+    background: #ffff00;
+}
+
+.navigation ul li:nth-child(4):hover~.indicator {
+    transform: translateX(calc(70px * 3));
+    box-shadow: 0 0 15px #ff0000;
+    background: #ff0000;
+}
+
+.navigation ul li:nth-child(5):hover~.indicator {
+    transform: translateX(calc(70px * 4));
+    box-shadow: 0 0 15px #33ff00;
+    background: #33ff00;
+}
+
+.navigation ul li:nth-child(6):hover~.indicator {
+    transform: translateX(calc(70px * 5));
+    box-shadow: 0 0 15px #4d4dff;
+    background: #4d4dff;
+}
+
+.navigation ul li:nth-child(7):hover~.indicator {
+    transform: translateX(calc(70px * 6));
+    box-shadow: 0 0 15px gold;
+    background: gold;
+}
+
+.navigation ul li:nth-child(8):hover~.indicator {
+    transform: translateX(calc(70px * 7));
+    box-shadow: 0 0 15px #db3eb1;
+    background: #db3eb1;
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100vw;
+    object-fit: cover;
+    object-position: left center;
+}
+
+.main form{
+    display: flex;
+    flex-direction: column; 
+}
+
+img {
+    height: 100vh;
+    width: 100vw;
+}
+
+placeholder {
+    color: black;
+}
+
+input {
+    background: lavender;
+    width: 20vw;
+    height: 10vh;
+    color: black;
+    font-size: large;
+    border-radius: 5px;
+    font-weight: bolder;
+    padding-left: 10px;
+    box-shadow: inset -3px -3px 7px #0883ee73, inset 3px 3px 5px rgba(94, 104, 121, .288);
+}
+
+/* Alien code CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.canvas {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fly {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: motion 20s infinite;
+}
+
+.alien {
+    position: absolute;
+    background: #50CB93;
+    width: 15vmin;
+    height: 7vmin;
+    border-radius: 45%;
+}
+
+.alien::before {
+    content: "";
+    position: absolute;
+    background: #50CB93;
+    top: -3vmin;
+    left: 2.5vmin;
+    width: 10vmin;
+    height: 7vmin;
+    border-radius: 50%;
+    z-index: -1;
+    box-shadow: inset -.7vmin 0 .5vmin #5D8233,
+        inset .7vmin 0 .5vmin #ACFFAD;
+}
+
+.alien::after {
+    content: "";
+    position: absolute;
+    top: 2vmin;
+    left: 2vmin;
+    background: #BD4B4B;
+    width: 2vmin;
+    height: 2vmin;
+    border-radius: 50%;
+    filter: blur(.6vmin);
+    box-shadow: 9vmin 0 0 #BD4B4B;
+}
+
+.topLeft {
+    position: absolute;
+    top: -3vmin;
+    width: 4vmin;
+    height: 5vmin;
+    border-radius: 100% 54% 10% 50% / 70% 10% 30% 30%;
+    border-top: 1.5vmin solid #50CB93;
+    transform: rotate(30deg);
+    z-index: -2;
+}
+
+.topLeft::before {
+    content: "";
+    position: absolute;
+    background: #50CB93;
+    top: -1vmin;
+    left: -1vmin;
+    width: 2vmin;
+    height: 2vmin;
+    border-radius: 50%;
+    box-shadow: inset -.2vmin -.2vmin 1vmin #5D8233;
+}
+
+.topRight {
+    position: absolute;
+    top: -3vmin;
+    right: 0;
+    width: 4vmin;
+    height: 5vmin;
+    border-radius: 100% 54% 10% 50% / 70% 10% 30% 30%;
+    border-top: 1.5vmin solid #50CB93;
+    transform: scaleX(-1) rotate(30deg);
+    z-index: -2;
+}
+
+.topRight::before {
+    content: "";
+    position: absolute;
+    background: #50CB93;
+    top: -1vmin;
+    left: -1vmin;
+    width: 2vmin;
+    height: 2vmin;
+    border-radius: 50%;
+    box-shadow: inset -.2vmin -.2vmin 1vmin #5D8233;
+}
+
+.eyes {
+    position: absolute;
+    left: 5vmin;
+    background: #000;
+    width: 1vmin;
+    height: 1vmin;
+    border-radius: 50%;
+    box-shadow: 4vmin 0 0 #000;
+}
+
+.eyebrows {
+    position: absolute;
+    top: -1vmin;
+    left: 5vmin;
+    background: #000;
+    width: .7vmin;
+    height: .3vmin;
+    box-shadow: 4vmin 0 0 #000;
+}
+
+.mouth {
+    position: absolute;
+    background: #000;
+    bottom: 5vmin;
+    left: 6.5vmin;
+    width: 2vmin;
+    height: .5vmin;
+}
+
+.helmet {
+    position: absolute;
+    background: #C9E4C5;
+    top: -11vmin;
+    width: 20vmin;
+    height: 15vmin;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: .4;
+    box-shadow: inset 1.5vmin .5vmin 1vmin #fff;
+}
+
+.middle {
+    position: absolute;
+    top: 2vmin;
+    left: -7vmin;
+    background: #FFAA4C;
+    width: 14vmin;
+    height: 2vmin;
+    z-index: 1;
+}
+
+.middle::before {
+    content: "";
+    position: absolute;
+    background: #FFE194;
+    left: 4vmin;
+    width: 6vmin;
+    height: 2vmin;
+}
+
+.glitter {
+    position: absolute;
+    left: -8vmin;
+    top: -6vmin;
+    background: #fff;
+    width: 1.5vmin;
+    height: 4.5vmin;
+    border-radius: 50%;
+    transform: rotate(15deg);
+    z-index: 1;
+}
+
+.glitter::before {
+    content: "";
+    position: absolute;
+    top: -2vmin;
+    left: 1vmin;
+    background: #fff;
+    width: 1.5vmin;
+    height: 1.5vmin;
+    border-radius: 50%;
+}
+
+.ufo {
+    position: absolute;
+    top: -3vmin;
+    background: #0c0506;
+    width: 45vmin;
+    height: 18vmin;
+    border-radius: 50%;
+    z-index: -2;
+    box-shadow: inset 0 -1.5vmin 2vmin #962D2D,
+        inset .5vmin 1vmin 3vmin #fff;
+}
+
+.ufo::before {
+    content: "";
+    position: absolute;
+    top: 1.5vmin;
+    left: 12.5vmin;
+    background: #962D2D;
+    width: 20vmin;
+    height: 7vmin;
+    border-radius: 50%;
+    box-shadow: inset 0 -.5vmin 2vmin #4F0E0E;
+}
+
+.lights {
+    position: absolute;
+    top: 6vmin;
+    left: 5vmin;
+    background: #334257;
+    width: 7vmin;
+    height: 4vmin;
+    border-radius: 50%;
+    box-shadow: inset 0 1vmin 1vmin #548CA8;
+    animation: lighton 20s infinite;
+}
+
+.lights::before {
+    content: "";
+    position: absolute;
+    top: 4vmin;
+    left: 14vmin;
+    background: #334257;
+    width: 7vmin;
+    height: 4vmin;
+    border-radius: 50%;
+    box-shadow: inset 0 1vmin 1vmin #548CA8;
+    animation: lighton 20s infinite;
+}
+
+.lights::after {
+    content: "";
+    position: absolute;
+    left: 29vmin;
+    background: #334257;
+    width: 7vmin;
+    height: 4vmin;
+    border-radius: 50%;
+    box-shadow: inset 0 1vmin 1vmin #548CA8;
+    animation: lighton 20s infinite;
+}
+
+.legs {
+    position: absolute;
+    background: #334257;
+    bottom: 0;
+    left: 4vmin;
+    width: 3.5vmin;
+    height: 4vmin;
+    border-radius: 62% 38% 79% 21% / 100% 29% 71% 0%;
+    box-shadow: inset .5vmin -1vmin .5vmin #548CA8,
+        inset .1vmin .2vmin .5vmin #000;
+}
+
+.legs::before {
+    content: "";
+    position: absolute;
+    background: #334257;
+    bottom: 0;
+    left: 32vmin;
+    width: 3.5vmin;
+    height: 4vmin;
+    transform: scaleX(-1);
+    border-radius: 62% 38% 79% 21% / 100% 29% 71% 0%;
+    box-shadow: inset .5vmin -1vmin .5vmin #548CA8,
+        inset .1vmin .2vmin .5vmin #000;
+}
+
+@keyframes motion {
+    0% {
+        transform: scale(0) rotate(0deg) translateX(30vmin) rotate(0deg);
+    }
+
+    30% {
+        transform: scale(1) rotate(260deg) translateX(20vmin) rotate(-250deg);
+    }
+
+    70% {
+        transform: scale(1) rotate(350deg) translateX(10vmin) rotate(-360deg);
+    }
+
+    100% {
+        transform: scale(0) rotate(10deg) translateX(20vmin) rotate(0deg);
+    }
+}
+
+@keyframes lighton {
+    0% {
+        background: #334257;
+    }
+
+    20% {
+        background: #334257;
+    }
+
+    50% {
+        background: #FFE194;
+    }
+
+    70% {
+        background: #FFE194;
+    }
+
+    90% {
+        background: #334257;
+    }
+
+    100% {
+        background: #334257;
+    }
+}
+
+.stars {
+    position: absolute;
+    background: #FFE194;
+    top: -40vmin;
+    width: .7vmin;
+    height: .7vmin;
+    border-radius: 50%;
+    filter: blur(.2vmin);
+    box-shadow: 20vmin 2vmin 0 #FFE194, 10vmin -20vmin 0 #FFE194,
+        20vmin 50vmin 0 #FFE194, -30vmin 10vmin 0 #FFE194,
+        -20vmin -40vmin 0 #FFE194, -40vmin 120vmin 0 #FFE194,
+        40vmin 70vmin 0 #FFE194, -10vmin 100vmin 0 #FFE194,
+        10vmin 110vmin 0 #FFE194, 40vmin 130vmin 0 #FFE194,
+        -20vmin 40vmin 0 #FFE194, -10vmin 60vmin 0 #FFE194,
+        10vmin 120vmin 0 #FFE194;
+    animation: twinkle .01s infinite;
+}
+
+.stars::before {
+    content: "";
+    position: absolute;
+    background: #FFE194;
+    width: .3vmin;
+    height: .3vmin;
+    border-radius: 50%;
+    box-shadow: -40vmin 10vmin 0 #FFE194, 30vmin 10vmin 0 #FFE194,
+        50vmin 10vmin 0 #FFE194, -10vmin 80vmin 0 #FFE194,
+        -40vmin 70vmin 0 #FFE194, 20vmin 120vmin 0 #FFE194,
+        10vmin 150vmin 0 #FFE194, -30vmin 90vmin 0 #FFE194,
+        40vmin 20vmin 0 #FFE194, 60vmin 100vmin 0 #FFE194,
+        10vmin 120vmin 0 #FFE194, 30vmin 60vmin 0 #FFE194,
+        20vmin 40vmin 0 #FFE194, -45vmin -15vmin 0 #FFE194;
+    animation: twinkle .1s infinite;
+}
+
+@keyframes twinkle {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
