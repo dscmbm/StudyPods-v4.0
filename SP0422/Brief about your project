@@ -1,1 +1,19 @@
+Instructions to run the project :-
+1. first, clone project.
+2. open terminal for same folder and run command :- npm i
+3. then run the command :- npm start
+4. then go to  your browser and search -
+http://localhost:5000/
+project will run
 
+or 
+you can direct access project by this link project is hosted on this link
+https://chat-room-3mbg.onrender.com/
+
+then create a room with unique roomName and userName and start chating multiple users can chat in same room .
+multiple room can be created be created at a time.
+
+we made a static web chat room where peaple can create room and chat.
+most of the part is backend MERNstack specific
+we used Node.js with express,javascript and mongodb atlas  cluster as remote data storage.
+for fronend we used ejs template engine.
