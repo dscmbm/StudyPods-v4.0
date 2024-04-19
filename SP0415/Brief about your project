@@ -15,3 +15,11 @@ Usage:
 
 This projects serves as a basic example of using logistics regression for binary classification of news articles. 
 Here the data with values above than 0.5(threshold value) are fake news and data with values below threshold value are real news
+
+
+# POD015 / SP0415
+MEMBERS:
+  1. Yashika Garg (lead)
+  2. Kallu Kumari 
+  3. Aashita Bhandari
+  4. Aditya vyas
