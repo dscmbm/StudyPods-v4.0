@@ -1,1 +1,133 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type = "image/x-icon" rel="img/favicon.ico">
+    <title>Career Canvas</title>
+    
+    
+</head>
+<body>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href=" ">Career Canvas </a></li>
+            <li><a href=" "><i class="fa-solid fa-house"></i>Home</a></>
+            <li><a href=" "><i class="fa-solid fa-phone"></i>Contact Us</a></li>
+            <li><a href=" ">Our Services</a></li>
+            <li><a href=" ">Register </a></li>
+            <li id ="sign"><a href=" "> Login <i class="fa-solid fa-right-to-bracket"></i></a></li>
+
+        </ul>
+    </nav>
+    
+    <p>Welcome to Career Canvas, your gateway to exploring a world of career possibilities! Whether you're a recent graduate embarking on your professional journey, a seasoned professional seeking new opportunities, or someone simply curious about different career paths, you've come to the right place. Our mission is to provide you with the tools, resources, and insights you need to discover, evaluate, and pursue the career of your dreams. From in-depth career guides and industry insights to skill-building resources and expert advice, we're here to empower you to make informed decisions about your future. Get ready to embark on an exciting exploration of your potential – let's uncover the possibilities together!</p>
+
+    <div class = "h1-banner-title">
+        <h1>Five points to consider while choosing a stream after class X</h1>
+    </div>
+    <p>Every year, lakhs of students attempt different exams. Meanwhile, there are many students who have no idea about what to do after Class 12. This might directly be linked to the wrong choice of subjects after Class 10. The stream you choose after the 10th has the power to shape your whole career.
+
+        Some might not be satisfied with their Class 11 and 12 subjects. Thus, there are plenty of students who change their minds and go to a different stream after Class 12. To avoid all this confusion, let us look at some tips that will help in choosing the right stream after Class 10. For that, the first step is to know the available streams. Then, explore the career opportunities in each stream and choose the one that suits you. Here are some points that will help you in the choosing process. Also, let us discuss the points that should not be considered while choosing a stream.</p>
+    <h2>Know available Streams/Subjects</h2>
+    <p> In CBSE, students can choose a minimum of 5 and a maximum of 9 subjects. Usually, there are 4 to 5 main subjects and the students have to choose an optional subject. Here, let’s have a look at the subjects available under different streams.</p>
+    <h2>Research syllabus of all subjects</h2>
+    <p>As mentioned earlier, one must have a basic understanding of the subjects available and the opportunities in each stream or subject. After getting the rough outline of the options, let’s dive deep to explore its content.
+
+        For each subject, download the NCERT syllabus from the official website and go through its content. This will give a rough idea of the intensity of each subject. If you don’t have much clue, then watch online demo classes and do some basic research on those syllabus topics. If possible, go for unpaid internships and volunteering programs related to your career choice to know whether or not to select that particular stream. Always try to link your subject choice with your future career goals.</p>
+    <h2>Know your interests</h2>
+    <p>What is your aim in life? This is the most common question that every teenager encounters. The time span after Class 10 is the right period to get the answer to this question. By this time, you would have a rough idea of the subjects that interest you. Some might even have a full-fledged career goal set before them. But how to know whether we have chosen the right subject and career path? Here are some points to be considered:</p>
+    <ol>
+        <li>Subjects that you score well are not always directly proportional to your interest. The topics or subject that motivates you to invest more time and pushes you to learn more without giving a sense of tiredness should be chosen.</li>
+        <li>Make sure that the subject will help you to achieve your aim. The subject must have importance in leading you in the right career direction.</li>
+        <li>Also, make sure that you like the other subjects associated with the subject of your choice. In the end, it is the cumulative scores that are going to decide your future.</li>
+    </ol>
+    
+    <h2>Aspects 'Not' to consider</h2>
+    <p>Till now, we saw the points which we should consider while choosing subjects. Here, we will look at some points that are not to be considered while choosing your stream after Class 10.</p>
+    <ol>
+        <li>Parental or societal pressure should not influence your choice. This can have a negative impact on your educational journey.</li>
+        <li>Do not give priority to streams based only on fame and money. Choose interest over income. If you give your 100% in your field of interest, then money and fame will eventually follow.</li>
+        <li>Do not have a dreamy or imaginary notion of your career. Your career is always not something that you see in movies. As mentioned before, explore the nature of work by doing internships. This should help you to decide your career path and the subjects that aid in your career.</li>
+
+    </ol>
+    <h2>How to Choose the 5th subject</h2>
+    <p>In CBSE, one must choose a minimum of 5 subjects to take Class 11 and 12 exams. The main subject and optional details are provided in the first table. In most cases, the 5th optional subject should be chosen with care. It must be a subject that helps in achieving your aim. Also, it must be an easy-scoring subject that reduces your stress during the time of the exam. Students who have plans to prepare for exams like NEET, make sure that the optional subject will not a strain on your NEET preparations. Apart from the difficulty level, make sure that the optional subject adds to your skill set.</p>
+    <h2>Shoud we take the Sixth Subject?</h2>
+    <p>It is not mandatory to have 6 subjects in Classes 11 and 12. Thus, if possible, don’t take additional subjects. Additional subjects will invariably lead to additional stress. Any additional burden that leads to a lower score can eventually affect your future aim.</p>
+    <h2>IKIGAI – A Reason for Being</h2>
+    <p>The following is a Japanese concept for a happy and reasonable life. Have this as a checklist before choosing your stream after Class 10 or before making any career decision.</p>
+    <ul>
+        <li>Do what you love</li>
+        <li>Do what you are good at</li>
+        <li>Do what you can be paid for.</li>
+        <li>Do what the world needs.</li>
+    </ul>
+    <p>In a nutshell, focus on something that you can do with passion and professionalism at the same time. Anything you do must lead to excitement, comfort and satisfaction.</p>
+    <br>
+    
+    <div id = "link">
+        <h2> Know more about various streams</h2>
+        <a href = "hrithik.html">Science</a>
+        <br>
+        <a href = "tanvi.html">Commerce</a>
+        <br>
+        <a href = "tanishq.html">Arts</a>
+
+
+    </div>
+    
+
+
+    
+</body>
+
+<footer class = "footer">
+    <div class = "container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href = " ">About Us</a></li>
+                    <li><a href = " ">Privacy Policy</a></li>
+                    <li><a href = " ">Terms & Conditions</a></li>
+                    <li><a href = " ">Affiliate Program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href = " ">FAQ</a></li>
+                    <li><a href = " ">Admission</a></li>
+                    <li><a href = " ">Courses</a></li>
+                    <li><a href = " ">Talk to Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href = " ">IIT-JEE</a></li>
+                    <li><a href = " ">NEET</a></li>
+                    <li><a href = " ">CAT</a></li>
+                    <li><a href = " ">UPSC</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class = "social-links">
+                    <a href = "https://www.facebook.com/share/oBUMq9ZqE774krWN/?mibextid=YMEMSu"><i class="fa-brands fa-facebook"></i></a>
+                    <a href = "https://www.instagram.com/radiant_reverie_98?igsh=eTh4eGR6NXNpbHJn&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                    <a href = "https://www.linkedin.com/in/tejendra-singh-5600a9291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href = ""><i class="fa-brands fa-twitter"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+</html>
