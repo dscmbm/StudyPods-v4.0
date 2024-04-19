@@ -1,1 +1,10 @@
+# Basic Instruction-
+In this project we use a yolo model (yolov5s) and trained it on our custom dataset. So our project is basically an object detection model.
+We used a dataset from the Roboflow universe for training and our training was done on local machine.
 
+# What it does?
+The trained yolo weight is capable of recognizing faces which have worn mask and which haven't. So it is basically a mask detection system where it will tell if the person is wearing mask or not. It also tells if the person is wearing the mask incorrectly.
+
+# Codes- 
+To input image as source - python3 detect.py --weights best.pt --source <image path here>
+To use camera as input (live feed) - python3 detect.py --weights best.pt --source 0
