@@ -67,7 +67,7 @@ SP0424 is an amazing team built by the efforts of its team members and the suppo
 
 ### Mentor
 
-#### Jayprakash Chaudhary
+#### Jayprakash Choudhary
 
 ## Weekly Logs
 
