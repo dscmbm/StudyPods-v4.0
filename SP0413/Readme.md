@@ -50,3 +50,16 @@ EduTasker is a full-stack MERN project developed by Team FAB 4 for StudyPods v4.
 4. Enjoy a streamlined and productive learning experience with EduTasker.
 
 ---
+## Screenshots
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Todo List
+![Todo List](screenshots/todo.png)
+
+### Pomodoro Timer
+![Pomodoro Timer](screenshots/pomodoro.png)
+
+### Expense Tracker
+![Expense Tracker](screenshots/expense.png)
