@@ -1,1 +1,44 @@
+# GangAI - AI & ML Project Team
 
+Welcome to the GangAI project repository! 🚀
+
+## About Us
+We are a passionate team of AI and ML enthusiasts, committed to exploring the fascinating world of artificial intelligence and machine learning. Our mission is to create innovative solutions, learn from each other, and contribute to cutting-edge research.
+
+## Project Overview
+- **Project Name**: GangAI
+- **Pod Number**: SP0410
+- **Domain**: Artificial Intelligence and Machine Learning
+
+## Goals
+Our project aims to:
+- Develop robust machine learning models.
+- Solve real-world problems using AI techniques.
+- Collaborate, learn, and grow together.
+
+## Repository Structure
+- `data/`: Contains datasets used for training and evaluation.
+- `models/`: Stores trained models and their weights.
+- `notebooks/`: Jupyter notebooks for experimentation.
+- `src/`: Source code for our AI/ML algorithms.
+- `docs/`: Documentation and project-related files.
+
+## Getting Started
+1. Clone this repository:
+
+   git clone https://github.com/GangAI/GangAI.git
+
+2. Explore our notebooks and codebase to understand our approach.
+
+## Team Members
+- Deepak (Team Lead)
+- Ankit Sharma (Data Scientist)
+- Dhruv Saini (ML Engineer)
+- Dheeraj Panwar (Researcher)
+
+## Contact
+Feel free to reach out to us via email or join our weekly sync meetings. Let's make AI magic together! ✨
+
+---
+
+*Note: This README is a placeholder. We'll update it with project-specific details as we progress.*
