@@ -1,0 +1,1191 @@
+/* Fonts */
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.open-sans * {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+/* .hammersmith-one-regular {
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.berkshire-swash-regular {
+  font-family: "Berkshire Swash", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rowdies-light {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.rowdies-regular {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rowdies-bold {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rubik-doodle shadow-regular {
+  font-family: "Rubik Doodle Shadow", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.salsa-regular {
+  font-family: "Salsa", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.akronim-regular {
+  font-family: "Akronim", system-ui;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+/* theme */
+::selection {
+  color: white;
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.scaleUpTop {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transform-origin: top;
+}
+
+.scaleUpTop:hover {
+  transform: scale(1.1);
+}
+
+.scaleUpCenter {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transform-origin: center;
+}
+
+.scaleUpCenter:hover {
+  transform: scale(1.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* body {
+  width: 100% !important;
+} */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  max-height: 100px;
+  width: 100%;
+  background-color: red;
+  text-align: center;
+  align-items: center;
+  position: sticky;
+  top: 0%;
+  flex-wrap: wrap;
+  z-index: 1000000;
+  margin-bottom: 0px;
+  background-image: linear-gradient(to right, rgb(255, 0, 0) 0%, #0044ff 100%);
+  min-height: 7vh;
+}
+
+nav>a>img {
+  margin: 10px px;
+  max-width: 300px;
+}
+
+.navList {
+  display: flex;
+  gap: 30px;
+  color: yellow;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navList>li {
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navList>li>a:link {
+  color: yellow;
+  text-decoration: none;
+}
+
+.navList>li>a:visited {
+  color: yellow;
+}
+
+.navList>li>a:hover {
+  color: red;
+  background-color: yellow;
+  margin: 0px -10px 0px -10px;
+  padding: 10px 10px;
+  border-radius: 20px;
+}
+
+/* nav svg {
+  width: 40px;
+  height: 40px;
+} */
+
+#sideBarActive {
+  display: none;
+}
+
+.openSideBarBtn, .closeSideBarBtn {
+  display: none;
+}
+
+nav label svg {
+  fill: gold;
+  width: 50px;
+  height: 50px;
+}
+
+.section1 {
+  background-image: url(images/ATHQBG1.webp);
+  background-attachment: fixed;
+  position: relative;
+  background-size: 100%;
+  height: 100vh;
+  min-height: 850px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: auto;
+  padding: 5vw;
+  text-align: center;
+  align-items: center;
+}
+
+.headerSection {
+  text-align: center;
+}
+
+.headerLine1 {
+  color: yellow;
+  font-weight: bolder;
+  font-size: 60px;
+  margin: 10px;
+  text-shadow: 0px 0px 25px rgb(0, 0, 0);
+  text-wrap: pretty;
+}
+
+.headerLine2 {
+  color: yellow;
+  font-weight: bolder;
+  font-size: 40px;
+  margin: 10px;
+  text-shadow: 0px 0px 25px rgb(0, 0, 0);
+  text-wrap: pretty;
+}
+
+.featured {
+  margin: 10px auto;
+  padding: 10px;
+  width: 80vw;
+  display: flex;
+  gap: 5vw;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.section1>h2 {
+  color: yellow;
+  font-weight: bolder;
+  font-size: 50px;
+  /* margin: 10px; */
+  margin-bottom: 20px;
+  text-shadow: 0px 0px 25px rgb(0, 0, 0);
+  text-wrap: pretty;
+  text-align: center;
+}
+
+.featuredPosts {
+  width: 50%;
+  height: 50vh;
+  background-color: rgba(213, 213, 213, 0.5);
+  border-radius: 50px;
+  box-shadow: 0px 0px 50px;
+  scroll-behavior: auto;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.featuredPosts>h3 {
+  color: yellow;
+  font-weight: bolder;
+  font-size: 30px;
+  margin: 10px;
+  text-shadow: 0px 0px 25px rgb(0, 0, 0);
+  text-wrap: pretty;
+  text-align: center;
+}
+
+.featuredPosts>div {
+  background-color: rgba(255, 255, 255, 0.677);
+  width: 90%;
+  text-align: center;
+  margin: 10px auto;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px;
+}
+
+.featuredPosts>div>a>img {
+  width: 30vw;
+  height: 30vh;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.featuredPosts>div>h4 {
+  color: red;
+  font-weight: bolder;
+  font-size: 25px;
+  margin: 0px 10px;
+  text-shadow: 0px 0px 5px yellow;
+  text-wrap: pretty;
+  text-align: center;
+}
+
+.featuredPosts>div>p {
+  color: black;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 10px;
+  padding: 20px;
+  text-wrap: pretty;
+  text-align: left;
+}
+
+.readMore {
+  font-weight: bold;
+  font-size: 16px;
+  background-color: rgb(233, 3, 3);
+  /* text-shadow:  0px 0px 5px black; */
+  border-radius: 10mm;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.readMore a:link {
+  color: gold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.readmore a:visited {
+  color: gold;
+}
+
+main {
+  background-image: url(images/ATHQBG2.webp);
+  background-attachment: fixed;
+  position: relative;
+  background-size: 100%;
+  padding: 5vw;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: start;
+  justify-content: center;
+  text-align: center;
+  /* box-shadow: 0px 0px 10px; */
+}
+
+.mainSection {
+  width: 95%;
+  margin: 0px auto;
+}
+
+.mainSection>h2 {
+  color: yellow;
+  font-weight: bolder;
+  font-size: 40px;
+  text-shadow: 0px 0px 25px rgb(0, 0, 0);
+  text-wrap: pretty;
+  text-align: left;
+  margin: 20px;
+}
+
+.post {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.825);
+  border-radius: 25px;
+  box-shadow: 0px 0px 50px 5px;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+.post>a>img {
+  width: 30vw;
+  height: 30vh;
+  border-radius: 20px;
+  margin: 10px auto;
+  object-fit: cover;
+}
+
+.post h4 {
+  color: red;
+  font-weight: bolder;
+  font-size: 25px;
+  text-shadow: 0px 0px 5px yellow;
+  text-wrap: pretty;
+  text-align: left;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.post p {
+  color: black;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 10px;
+  text-wrap: pretty;
+  text-align: left;
+}
+
+a:link {
+  color: gold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited {
+  color: gold;
+}
+
+.pagination {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center center;
+  margin-top: 80px;
+}
+
+.pagination svg {
+  fill: black;
+  background-color: rgba(255, 255, 255, 0.825);
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+}
+
+.pagination p {
+  font-weight: 700;
+  font-size: 30px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.825);
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+}
+
+.pagination p:hover {
+  color: gold;
+  background-color: red;
+}
+
+.pagination svg:hover {
+  fill: gold;
+  background-color: red;
+}
+
+.pagination .activePage {
+  color: gold;
+  background-color: red;
+}
+
+.sideBar {
+  margin: 0px auto;
+  margin-top: 58px;
+}
+
+.sideBarContent {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.825);
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px 5px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.sideBarContent h3 {
+  /* color: red; */
+  font-weight: bolder;
+  font-size: 25px;
+  /* text-shadow: 0px 0px 5px yellow; */
+  text-wrap: pretty;
+  text-align: center;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.sideBarContent .catagoryElement {
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+  margin: 8px;
+  padding: 3px;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.108);
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.sideBarContent .catagoryElement:hover {
+  background-image: linear-gradient(to right, yellow 0%, #ff8400 100%);
+}
+
+.catagoryElement div {
+  padding: 2px 10px;
+}
+
+.popularPost {
+  margin: 20px auto;
+  width: 19vw;
+  height: 18vh;
+  object-fit: contain;
+  overflow: hidden;
+  /* border: 2px solid; */
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 2px;
+}
+
+.popularPost img {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popularPost>div>a>h4 {
+  color: white;
+  font-weight: bolder;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.481);
+  text-shadow: 0px 0px 50px black;
+  text-wrap: pretty;
+  text-align: center;
+  position: relative;
+  top: -54px;
+}
+
+.sideBarContent .socialMediaPlugins svg {
+  width: 50px;
+  height: 50px;
+}
+
+footer .footerTop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(20, 20, 20);
+  border-top: 4px solid yellow;
+}
+
+footer .footerSection>div {
+  margin: 5px;
+  padding: 5px;
+}
+
+.footerSection h4 {
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 10px;
+  padding: 10px;
+}
+
+footer .footerLeft,
+footer .footerCenter,
+footer .footerRight {
+  width: 33vw;
+}
+
+footer .footerLeft>.about>img {
+  margin: 5px;
+  /* padding: 5px; */
+  width: 300px;
+}
+
+footer .footerLeft>.about>p {
+  margin: 5px 10px;
+  color: white;
+  font-size: 16px;
+}
+
+footer .footerLeft>.topCatagories>div {
+  margin: 10px 20px;
+}
+
+footer .footerLeft>.topCatagories>div>a>.topCatagory {
+  color: white;
+  background-color: rgb(66, 66, 66);
+  font-weight: 600;
+  margin: 5px 2px;
+  padding: 3px 10px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+footer .footerLeft>.topCatagories>div>a>.topCatagory:hover {
+  color: black;
+  background-image: linear-gradient(to right, yellow 0%, #ff8400 100%);
+  font-weight: 600;
+}
+
+footer .footerCenter>.trendingPosts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .footerCenter> .trendingPosts> svg {
+  fill: yellow;
+  margin-top: 20px;
+  margin-left: -10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+footer .footerCenter>.trendingPosts> div {
+  margin: 5px 20px;
+}
+
+footer .footerCenter>.trendingPosts>div>a>.trendingPost {
+  color: white;
+  background-color: rgb(66, 66, 66);
+  font-weight: 600;
+  margin: 10px 2px;
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+
+footer .footerCenter>.trendingPosts>div>a>.trendingPost:hover {
+  color: black;
+  background-image: linear-gradient(to right, yellow 0%, #ff8400 100%);
+  font-weight: 600;
+}
+
+footer .footerRight>.contactUs>form {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+footer .footerRight>.contactUs>form>input {
+  width: 90%;
+  height: 30px;
+  margin: 10px auto;
+  padding: 10px;
+  color: white;
+  background-color: rgb(66, 66, 66);
+  font-size: 16px;
+  border: 0px;
+  border-radius: 10px;
+}
+
+footer .footerRight>.contactUs>form>textarea {
+  width: 90%;
+  height: 50%;
+  margin: 10px auto;
+  padding: 10px;
+  color: white;
+  background-color: rgb(66, 66, 66);
+  font-size: 16px;
+  border: 0px;
+  border-radius: 10px;
+}
+
+footer .footerRight>.contactUs>form>button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  /* color: red; */
+  background-color: yellow;
+  cursor: pointer;
+}
+
+footer .footerRight>.contactUs>form>button:hover {
+  color: black;
+  background-image: linear-gradient(to right, yellow 0%, #ff8400 100%);
+  font-weight: 600;
+}
+
+footer .footerBottom {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 25px;
+}
+
+footer .footerBottom>span {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 5px;
+  padding: 5px;
+}
+
+footer .footerBottom span a:link {
+  color: white;
+}
+
+footer .footerBottom span a:visited {
+  color: white;
+}
+
+footer .footerBottom span a:hover {
+  color: gold;
+}
+
+footer .footerBottom>h5 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+.backToTop {
+  display: none;
+  width: 50px;
+  height: 50px;
+  right: 50px;
+  bottom: 50px;
+  position: fixed;
+  fill: white;
+  background-color: red;
+  border-radius: 25px;
+}
+
+.backToTop:hover {
+  fill: yellow;
+}
+
+/* Your CSS rules for extra small devices go here */
+@media only screen and (max-width: 600px) {
+  .navList { 
+    font-size: 20px;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    position: fixed;
+    top: 0;
+    right: -120%;
+    z-index: 10;
+    width: 100%;
+    min-height:100%;
+    background-color: red;
+    transition: 0.5s ease-out;
+  }
+  .navList > a {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 10px 10px;
+    justify-content: flex-start;
+  }
+  .navList > a > li {
+    margin: 50px auto;
+    padding: 50px;
+  }
+
+  .openSideBarBtn, .closeSideBarBtn {
+    padding: 10px 10px;
+    display: block;
+  }
+
+  #sideBarActive:checked ~ .navList {
+    right: 0;
+  }
+  #sideBarActive:checked ~ #overlay {
+    min-height: 100%;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+
+  .section1 {
+    background-size: 200%;
+    height: 100vh;
+    min-height: 1350px;
+  }
+
+  .headerLine1 {
+    font-size: 50px;
+  }
+
+  .headerLine2 {
+    font-size: 30px;
+  }
+
+  .featured {
+    flex-direction: column;
+  }
+
+  .section1>h2 {
+    font-size: 38px;
+  }
+
+  .featuredPosts {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .featuredPosts>div>a>img {
+    width: 60vw;
+    height: 20vh;
+  }
+
+  main {
+    background-size: 200%;
+    grid-template-columns: 1fr;
+  }
+
+  .post {
+    flex-direction: column;
+  }
+
+  .post>a>img {
+    width: 80vw;
+    height: 30vh;
+  }
+
+  .sideBarContent {
+    width: 85%;
+    margin: 20px auto;
+  }
+
+  .popularPost {
+    width: 95%;
+  }
+
+  footer .footerTop {
+    grid-template-columns: 1fr;
+  }
+
+  footer .footerLeft,
+  footer .footerCenter,
+  footer .footerRight {
+    width: 100vw;
+  }
+}
+
+/* Your CSS rules for small devices go here */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .navList { 
+    flex-direction: column;
+    /* align-items: flex-start; */
+    position: fixed;
+    top: 0;
+    right: -120%;
+    z-index: 10;
+    width: 100%;
+    min-height: 100%;
+    background-color: red;
+    transition: 0.5s ease-out;
+  }
+  .navList a {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: flex-start;
+  }
+  .navList > li > a {
+    margin: 50px auto;
+    padding: 50px;
+  }
+
+  .openSideBarBtn, .closeSideBarBtn {
+    padding: 20px 30px;
+    display: block;
+  }
+
+  #sideBarActive:checked ~ .navList {
+    right: 0;
+  }
+  #sideBarActive:checked ~ #overlay {
+    min-height: 100%;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+  .navList>li {
+    font-size: 20px;
+  }
+
+  .section1 {
+    background-size: 200%;
+    height: 100vh;
+    min-height: 1800px;
+  }
+
+  .headerLine1 {
+    font-size: 50px;
+  }
+
+  .headerLine2 {
+    font-size: 30px;
+  }
+
+  .featured {
+    flex-direction: column;
+  }
+
+  .section1>h2 {
+    font-size: 38px;
+  }
+
+  .featuredPosts {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .featuredPosts>div>a>img {
+    width: 60vw;
+    height: 40vh;
+  }
+
+  main {
+    background-size: 200%;
+    grid-template-columns: 1fr;
+  }
+
+  .post {
+    flex-direction: column;
+  }
+
+  .post>a>img {
+    width: 80vw;
+    height: 40vh;
+  }
+
+  .popularPost {
+    width: 95%;
+    height: 30vh;
+  }
+
+  footer .footerTop {
+    grid-template-columns: 1fr;
+  }
+
+  footer .footerLeft,
+  footer .footerCenter,
+  footer .footerRight {
+    width: 100vw;
+  }
+}
+
+/* Your CSS rules for large devices go here */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .navList>li {
+    font-size: 20px;
+  }
+
+  .section1 {
+    background-size: 150%;
+    height: 100vh;
+    min-height: 1200px;
+  }
+
+  .headerLine1 {
+    font-size: 50px;
+  }
+
+  .headerLine2 {
+    font-size: 30px;
+  }
+
+  .featured {
+    flex-direction: row;
+  }
+
+  .section1>h2 {
+    font-size: 38px;
+  }
+
+  .featuredPosts {
+    width: 100%;
+    height: 60vh;
+  }
+
+  main {
+    background-size: 200%;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .mainSection {
+    width: 85%;
+  }
+
+  .post {
+    flex-direction: row;
+  }
+
+  .post {
+    flex-direction: column;
+  }
+
+  .post>a>img {
+    width: 95%;
+  }
+
+  .popularPost {
+    width: 95%;
+    height: 20vh;
+  }
+
+  footer .footerTop {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  footer .footerLeft,
+  footer .footerCenter,
+  footer .footerRight {
+    width: 33vw;
+  }
+}
+
+/* Your CSS rules for extra large devices go here */
+@media only screen and (min-width: 1200px) and (max-width: 2000px) {
+  .navList>li {
+    font-size: 20px;
+  }
+
+  main {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .headerLine1 {
+    font-size: 60px;
+  }
+
+  .headerLine2 {
+    font-size: 40px;
+  }
+
+  .section1>h2 {
+    font-size: 50px;
+  }
+
+  .featuredPosts {
+    width: 100%;
+    height: 50vh;
+  }
+}
+
+@media only screen and (min-width: 2000px) and (max-width: 5000px) {
+  nav>a>img {
+    margin: 10px px;
+    max-width: 400px;
+  }
+  .navList>li {
+    font-size: 50px;
+  }
+
+  .headerLine1 {
+    font-size: 80px;
+  }
+
+  .headerLine2 {
+    font-size: 50px;
+  }
+
+  .section1>h2 {
+    font-size: 70px;
+  }
+
+  .featuredPosts>h3 {
+    font-size: 60px;
+  }
+
+  .featuredPosts>div>h4 {
+    font-size: 40px;
+  }
+
+  .featuredPosts>div>p {
+    font-size: 30px;
+  }
+
+  .readMore {
+    font-size: 25px;
+    padding: 10px 20px;
+  }
+
+  .mainSection>h2 {
+    font-size: 80px;
+  }
+
+  .post h4 {
+    font-size: 40px;
+  }
+
+  .post p {
+    font-size: 20px;
+  }
+
+  .sideBar {
+    margin-top: 120px;
+  }
+
+  .popularPost {
+    width: 95%;
+    height: 20vh;
+  }
+}
+
+@media only screen and (min-width: 5000px) {
+  nav>a>img {
+    margin: 10px px;
+    max-width: 800px;
+  }
+  .navList>li {
+    font-size: 100px;
+  }
+
+  .headerLine1 {
+    font-size: 150px;
+  }
+
+  .headerLine2 {
+    font-size: 120px;
+  }
+
+  .section1>h2 {
+    font-size: 130px;
+  }
+
+  .featuredPosts>h3 {
+    font-size: 100px;
+  }
+
+  .featuredPosts>div>h4 {
+    font-size: 80px;
+  }
+
+  .featuredPosts>div>p {
+    font-size: 50px;
+  }
+
+  .readMore {
+    font-size: 70px;
+    padding: 10px 20px;
+  }
+
+  .mainSection>h2 {
+    font-size: 120px;
+  }
+
+  .post h4 {
+    font-size: 100px;
+  }
+
+  .post p {
+    font-size: 50px;
+  }
+
+  .popularPost {
+    width: 95%;
+    height: 20vh;
+  }
+
+  .sideBar {
+    margin-top: 190px;
+  }
+
+  .sideBarContent h3 {
+    font-size: 80px;
+  }
+
+  .sideBarContent .catagoryElement {
+    font-size: 50px;
+  }
+  
+  .popularPost>div>a>h4 {
+    font-size: 50px;
+    top: -150px;
+  }
+  .footerSection h4 {
+    font-size: 80px;
+  }
+  footer .footerLeft>.about>p {
+    font-size: 50px;
+  }
+  .footerLeft > .topCatagories > div > a > .topCatagory {
+    font-size: 50px;
+  }
+  .footerCenter > .trendingPosts > div > a > .trendingPost {
+    font-size: 50px;
+  }
+  footer .footerRight>.contactUs>form>input {
+    font-size: 50px;
+  }
+  footer .footerRight>.contactUs>form>textarea {
+    font-size: 50px;
+  }
+  footer .footerRight>.contactUs>form>button {
+    font-size: 60px;
+  }
+  footer .footerBottom>span {
+    font-size: 50px;
+  }
+  footer .footerBottom>h5 {
+    font-size: 50px;
+  }
+  
+  .backToTop {
+    width: 100px;
+    height: 100px;
+  }
+}
+

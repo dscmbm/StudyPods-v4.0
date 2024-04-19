@@ -1,0 +1,583 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700,800,900&display=swap");
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(background.jpg);
+    height: 100dvh;
+    display: flex;
+    /* min-height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* font-family: "Open Sans", Arial, Helvetica, sans-serif; */
+}
+
+.skewed {
+    width: 65%;
+    height: 75%;
+    display: flex;
+    background: white;
+    /* margin: 2em 0; */
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    margin-top: 20px;
+}
+
+.text {
+    color: black;
+    /* padding: 0 20px; */
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #0044ff; */
+}
+
+#text_signup {
+    font-family: "Lilita One", sans-serif;
+    font-size: 45px;
+}
+
+
+
+
+.container {
+    position: relative;
+    /* margin-top: 15px;
+    margin-bottom: 15px; */
+    max-width: 700px;
+    width: 100%;
+    background: transparent;
+    padding: 25px;
+    border-radius: 8px;
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+    overflow: auto;
+    scroll-behavior: auto;
+}
+
+.container header {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container .form {
+    margin-top: 55px;
+}
+
+.form .inputbox {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.inputbox label {
+    color: #333;
+    font-family: "Verdana", sans-serif;
+    font-size: 15px;
+}
+
+.form .inputbox input {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.form .inputbox input:hover {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+
+
+.form .gender-option {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 8px;
+}
+
+.form .gender {
+    column-gap: 5px;
+}
+
+.form :where(.gender input, .gender label) {
+    cursor: pointer;
+}
+
+.form .gender-box {
+    margin-top: 20px;
+    padding: 10px auto;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* #heading {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+} */
+
+.region {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.form .select-options {
+    margin-top: 20px;
+}
+
+.form .select-box {
+    position: relative;
+    height: 50px;
+    width: 40%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+.form .select-box:hover {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+}
+
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: #707070;
+    font-size: 1rem;
+    padding: 0 15px;
+}
+
+.submitbtn {
+    margin-top: 20px;
+}
+
+#submit-button {
+    height: 45px;
+    width: 100%;
+    background-color: rgb(234, 16, 16);
+    border-radius: 6px;
+    border: 1px solid rgb(234, 16, 16);
+    color: white;
+    outline: none;
+    font-family: "Verdana", sans-serif;
+    font-size: 15px;
+}
+
+#submit-button:hover {
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+
+/* form part ends  */
+
+.image {
+    height: 100%;
+    width: 41%;
+    background-image: url(goku_black.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ccc;
+    border-radius: 0px 20px 20px 0px;
+}
+
+
+
+
+
+
+/* Responsive Kovid's starts */
+
+@media screen and (max-width: 880px) {
+    .form .column {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-height: 684px) and (min-width: 410px) and (max-width: 992px) {
+    .skewed{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .skewed{
+        margin-top: 100px;
+    }
+}
+
+/* @media screen and (min-height: 650px) and (min-width: 600px){
+    .skewed{
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .text>.container{
+        
+    }
+
+} */
+
+
+.form :where(.gender-option, .gender) {
+    row-gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Responsive Kovid's ends */
+
+
+
+
+
+/* Nav bar starts */
+
+::selection {
+    color: white;
+    background-color: black;
+}
+
+.scaleUpTop {
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform-origin: top;
+}
+
+.scaleUpTop:hover {
+    transform: scale(1.1);
+}
+
+.scaleUpCenter {
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform-origin: center;
+}
+
+.scaleUpCenter:hover {
+    transform: scale(1.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    max-height: 100px;
+    width: 100%;
+    background-color: red;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    flex-wrap: wrap;
+    z-index: 1000000;
+    margin-bottom: 0px;
+    background-image: linear-gradient(to right, rgb(255, 0, 0) 0%, #0044ff 100%);
+    min-height: 7vh;
+}
+
+nav>a>img {
+    margin: 10px px;
+    max-width: 300px;
+}
+
+.navList {
+    display: flex;
+    gap: 30px;
+    color: yellow;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navList>li {
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navList>li>a:link {
+    color: yellow;
+    text-decoration: none;
+}
+
+.navList>li>a:visited {
+    color: yellow;
+}
+
+.navList>li>a:hover {
+    color: red;
+    background-color: yellow;
+    margin: 0px -10px 0px -10px;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+
+/* nav svg {
+    width: 40px;
+    height: 40px;
+  } */
+
+#sideBarActive {
+    display: none;
+}
+
+.openSideBarBtn,
+.closeSideBarBtn {
+    display: none;
+}
+
+nav label svg {
+    fill: gold;
+    width: 50px;
+    height: 50px;
+}
+
+.section1 {
+    background-image: url(images/ATHQBG1.jpg);
+    background-attachment: fixed;
+    position: relative;
+    background-size: 100%;
+    height: 100vh;
+    min-height: 850px;
+}
+
+/* Nav bar ends */
+
+
+/* Responsive Mohit's starts  */
+
+@media only screen and (max-width: 410px) {
+    .navList {
+        flex-direction: column;
+        /* align-items: flex-start; */
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 100%;
+        min-height: 100%;
+        background-color: red;
+        transition: 0.2s ease-out;
+    }
+
+    nav>a>img {
+        box-sizing: border-box;
+        height: auto;
+        width: 294px;
+        padding: 20px 3px;
+        justify-content: flex-start;
+    }
+
+    .navList>li>a {
+        margin: 50px auto;
+        padding: 50px;
+    }
+
+    .openSideBarBtn,
+    .closeSideBarBtn {
+        padding: 2px 3px;
+        display: block;
+    }
+
+    #sideBarActive:checked~.navList {
+        right: 0;
+    }
+
+    #sideBarActive:checked~#overlay {
+        min-height: 100%;
+        min-width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+    .navList>li {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 410px) and (max-width: 600px) {
+    .navList {
+        flex-direction: column;
+        /* align-items: flex-start; */
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 100%;
+        min-height: 100%;
+        background-color: red;
+        transition: 0.2s ease-out;
+    }
+
+    .navList a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+
+    .navList>li>a {
+        margin: 50px auto;
+        padding: 50px;
+    }
+
+    .openSideBarBtn,
+    .closeSideBarBtn {
+        padding: 20px 30px;
+        display: block;
+    }
+
+    #sideBarActive:checked~.navList {
+        right: 0;
+    }
+
+    #sideBarActive:checked~#overlay {
+        min-height: 100%;
+        min-width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+    .navList>li {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .navList {
+        flex-direction: column;
+        /* align-items: flex-start; */
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 100%;
+        min-height: 100%;
+        background-color: red;
+        transition: 0.2s ease-out;
+    }
+
+    .navList a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+
+    .navList>li>a {
+        margin: 50px auto;
+        padding: 50px;
+    }
+
+    .openSideBarBtn,
+    .closeSideBarBtn {
+        padding: 20px 30px;
+        display: block;
+    }
+
+    #sideBarActive:checked~.navList {
+        right: 0;
+    }
+
+    #sideBarActive:checked~#overlay {
+        min-height: 100%;
+        min-width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+    .navList>li {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .navList>li {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 2000px) {
+    .navList>li {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 2000px) and (max-width: 5000px) {
+    .navList>li {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 5000px) {
+    .navList>li {
+        font-size: 40px;
+    }
+}
+
+/* Responsive Mohit's ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .image::before {
+    content: '';
+    position: absoulte;
+    left: -6.1em;
+    top: 50%;
+    transform: 
+    translateY(-50%) rotate(20deg);
+    background: #111;
+    width: 40%;
+    height: 140%;
+
+} */
