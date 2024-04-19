@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+
+body {
+  font-family: "Dosis";
+}
+
+.logo {
+  height: 250px;
+  width: 250px;
+}
+
+.logoblock {
+  display: flex;
+  justify-content: center;
+}
+
+.discover {
+  font-size: 32px;
+}
+
+.vertical-nav-bar {
+  display: flex;
+  flex-direction: column; /* Change to column */
+  /* Remove position: fixed */
+  height: 100vh;
+  width: 18rem;
+  background-color: #f5f7f8;
+  padding-top: 20px;
+  border-right: solid 1px #f4ce14;
+}
+
+.vertical-nav-bar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.vertical-nav-bar li {
+  text-align: center;
+  padding: 5px 10px 5px 60px;
+}
+
+.vertical-nav-bar span {
+  display: flex;
+  padding: 5px 20px;
+  color: #45474b;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: left;
+  margin: 1px;
+  border: solid transparent 1px;
+  font-size: 20px;
+}
+
+.vertical-nav-bar span:hover {
+  background-color: #f4ce14;
+  color: #45474b;
+  border: solid transparent 1px;
+  border-radius: 2rem;
+}
+
+.headerClass {
+  padding: 0 0 0 60px;
+  text-shadow: 1px 1px 2px #f4ce14;
+}
+
+.active {
+  background-color: #f4ce14;
+  color: #45474b;
+  border: solid transparent 1px;
+  border-radius: 2rem;
+}
