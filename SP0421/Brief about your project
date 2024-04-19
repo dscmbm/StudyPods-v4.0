@@ -1,31 +1,40 @@
-<h1>Study Pods Project Team-SP4021</h1>
-<hr size="10">
-<h3>Domain under which roject has been made- Front End Web Development</h3>
-<h3>Technologies used:</h3>
-- HTML
-- CSS
-- JavaScript
-- Python
-- API
+<body>
+    <header>
+        <h1>Study Pods Project Team-SP4021</h1>
+        <hr>
+        <h3>Domain under which project has been made: Front End Web Development</h3>
+        <h3>Technologies used:</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>API</li>
+        </ul>
+    </header>
 
-## Key Features of website:
+    <section>
+        <h2>Key Features of the Website:</h2>
+        <ul>
+            <li><strong>AI-Powered Chatbot:</strong> Engage in personalized conversations and receive immediate guidance and support from our AI chatbot, designed to provide assistance and encouragement tailored to individual needs.</li>
+            <li><strong>Self-Help Resources and Books:</strong> Access a curated collection of self-help resources and recommended reading materials, empowering users with knowledge and strategies to navigate their mental health challenges effectively.</li>
+            <li><strong>Stress-Relieving Games:</strong> Explore a variety of interactive and engaging games designed to alleviate stress, promote relaxation, and foster a sense of enjoyment and well-being.</li>
+            <li><strong>Community Support:</strong> Join a supportive community where individuals can share their experiences, insights, and coping mechanisms related to mental health issues, fostering a sense of belonging and solidarity.</li>
+        </ul>
+    </section>
 
-- **AI-Powered Chatbot:** Engage in personalized conversations and receive immediate guidance and support from our AI chatbot, designed to provide assistance and encouragement tailored to individual needs.
+    <section>
+        <h2>Special Additions:</h2>
+        <ul>
+            <li><strong>Login/Signup Page:</strong> Secure access to personalized features and community interactions through our dedicated login/signup page.</li>
+            <li><strong>Soothing Interface:</strong> Enjoy a calming and user-friendly interface designed to promote relaxation and ease of navigation.</li>
+            <li><strong>Designed Website Logo:</strong> Our distinctive logo, thoughtfully designed to reflect our mission and values, enhances brand identity and recognition.</li>
+        </ul>
+    </section>
 
-- **Self-Help Resources and Books:** Access a curated collection of self-help resources and recommended reading materials, empowering users with knowledge and strategies to navigate their mental health challenges effectively.
-
-- **Stress-Relieving Games:** Explore a variety of interactive and engaging games designed to alleviate stress, promote relaxation, and foster a sense of enjoyment and well-being.
-
-- **Community support:** Join a supportive community where individuals can share their experiences, insights, and coping mechanisms related to mental health issues, fostering a sense of belonging and solidarity.
-
-## Special additions:
-
-- **Login/Signup Page:** Secure access to personalized features and community interactions through our dedicated login/signup page.
-
-- **Soothing Interface:** Enjoy a calming and user-friendly interface designed to promote relaxation and ease of navigation.
-
-- **Designed Website Logo:** Our distinctive logo, thoughtfully designed to reflect our mission and values, enhances brand identity and recognition.
-
-## Development Background:
-
-<b>This platform was built by team HACKTIVISTS(SP4021) during the Study Pods program organized by GDSC MBM Chapter, providing a collaborative environment for learning and innovation among students. </b>
+    <footer>
+        <p><strong>Development Background:</strong></p>
+        <p>This platform was built by team HACKTIVISTS (SP4021) during the Study Pods program organized by GDSC MBM Chapter, providing a collaborative environment for learning and innovation among students.</p>
+    </footer>
+</body>
+</html>
