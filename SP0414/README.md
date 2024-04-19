@@ -23,13 +23,13 @@ Attendance Management System
 
 
 ### Home Page
-![Home](link)
+![Home](https://github.com/marscruiser/StudyPods-v4.0/blob/3fec37590bfb0db2dfb2d8a685ec1db6af018ef0/SP0414/home.png)
 
 ### Login Page
-![Login](link)
+![Login](https://github.com/marscruiser/StudyPods-v4.0/blob/3fec37590bfb0db2dfb2d8a685ec1db6af018ef0/SP0414/login.png)
 
 ### Dashboard Page
-![Dashboard](link)
+![Dashboard](https://github.com/marscruiser/StudyPods-v4.0/blob/3fec37590bfb0db2dfb2d8a685ec1db6af018ef0/SP0414/dashboard.png)
 
 ## Mentor
 - Kumkum Sharma
