@@ -1,0 +1,74 @@
+body {
+    background: #212121;
+    color: #666;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .clearfix {
+    clear: both;
+  }
+  
+  #box {
+    width: 350px;
+    overflow: auto;
+    margin: 40px auto;
+    background: #666;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    text-align: center; /* Center the buttons */
+  }
+  
+  #message {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  #gameBoard li {
+    float: left;
+    margin: 10px;
+    height: 70px;
+    width: 70px;
+    font-size: 50px;
+    background: #333;
+    color: #ccc;
+    list-style: none;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  #gameBoard li:hover, #reset:hover, #start:hover {
+    cursor: pointer;
+    background: #000;
+  }
+  
+  #reset, #start {
+    border: 0;
+    background: #444;
+    color: #fff;
+    width: calc(50% - 10px); /* Set the width to half of the container width minus margin */
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px; /* Add some margin between the buttons */
+    display: inline-block; /* Display the buttons inline */
+  }
+  
+  .o {
+    color: green !important;
+  }
+  
+  .x {
+    color: red !important;
+  }
+  
+  footer {
+    display: flex;
+    justify-content:space-evenly;
+    padding-top: 20px;
+  }

@@ -1,0 +1,21 @@
+.container {
+    text-align: center;
+  }
+  
+  .color-palette {
+    margin-bottom: 20px;
+  }
+  
+  .color {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 5px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  
+  canvas {
+    border: 1px solid black;
+  }
+  

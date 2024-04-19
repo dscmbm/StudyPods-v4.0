@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fullscreen Spotify Playlist</title>
+</head>
+<body>
+
+<iframe id="spotifyPlaylist" style="border-radius: 12px" src="https://open.spotify.com/embed/playlist/4NFdEy7FnPdm1zq5lh8j3L?si=lKFSddXDTxSoIjqSGTno0Q&pi=a-5EV6ed8aSKys " width="100%" height="500px" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+<button onclick="goFullscreen()">Fullscreen</button>
+
+<script>
+  function goFullscreen() {
+    var iframe = document.getElementById('spotifyPlaylist');
+    if (iframe.requestFullscreen) {
+      iframe.requestFullscreen();
+    } else if (iframe.mozRequestFullScreen) { /* Firefox */
+      iframe.mozRequestFullScreen();
+    } else if (iframe.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+      iframe.webkitRequestFullscreen();
+    } else if (iframe.msRequestFullscreen) { /* IE/Edge */
+      iframe.msRequestFullscreen();
+    }
+  }
+</script>
+
+</body>
+</html>
