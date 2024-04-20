@@ -6,7 +6,7 @@ Welcome to the GangAI project repository! 🚀
 We are a passionate team of AI and ML enthusiasts, committed to exploring the fascinating world of artificial intelligence and machine learning. Our mission is to create innovative solutions, learn from each other, and contribute to cutting-edge research.
 
 ## Project Overview
-- **Project Name**: GangAI
+- **Project Name**: AutoML
 - **Pod Number**: SP0410
 - **Domain**: Artificial Intelligence and Machine Learning
 
@@ -17,28 +17,28 @@ Our project aims to:
 - Collaborate, learn, and grow together.
 
 ## Repository Structure
-- `data/`: Contains datasets used for training and evaluation.
-- `models/`: Stores trained models and their weights.
-- `notebooks/`: Jupyter notebooks for experimentation.
-- `src/`: Source code for our AI/ML algorithms.
-- `docs/`: Documentation and project-related files.
+- `dataset.csv, train.csv`: Contains datasets used for training and evaluation.
+- `bestmodel.pkl`: Stores trained model. 
+- `requirements.txt`: Modules and libraries versions required.
+- `app.py`: pyhton program file for modelling the dataset.
+- `docs/`: python program file for Mchine Learning.
 
 ## Getting Started
 1. Clone this repository:
 
-   git clone https://github.com/GangAI/GangAI.git
+   git clone https://github.com/deepak4728/StudyPods-v4.0/tree/main/SP0410
 
 2. Explore our notebooks and codebase to understand our approach.
 
 ## Team Members
-- Deepak (Team Lead)
+- Deepak (Team Lead, ML Engineer)
 - Ankit Sharma (Data Scientist)
-- Dhruv Saini (ML Engineer)
+- Dhruv Saini (Frontend Development, Model trainer)
 - Dheeraj Panwar (Researcher)
 
 ## Contact
 Feel free to reach out to us via email or join our weekly sync meetings. Let's make AI magic together! ✨
-
+   dy19363@gmail.com
 ---
 
 *Note: This README is a placeholder. We'll update it with project-specific details as we progress.*
