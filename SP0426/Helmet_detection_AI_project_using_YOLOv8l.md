@@ -1,8 +1,9 @@
-## Project Name:-Helmet detection AI project using YOLOv8l
+# Helmet detection AI project using YOLOv8l
 
-## Description :- This project aims to detect helmets in images using deep learning techniques. It utilizes a convolutional neural network (CNN) architecture trained on a dataset of images containing individuals wearing helmets. The model can be deployed for real-time helmet detection in various applications such as safety monitoring in construction sites, motorcycle riders, and sports activities.
+## Description 
+This project aims to detect helmets in images using deep learning techniques. It utilizes a convolutional neural network (CNN) architecture trained on a dataset of images containing individuals wearing helmets. The model can be deployed for real-time helmet detection in various applications such as safety monitoring in construction sites, motorcycle riders, and sports activities.
 
-### Domain :- Artificial Intelligence
+### Domain: Artificial Intelligence
 
 ### Tools and Languages Used
 
