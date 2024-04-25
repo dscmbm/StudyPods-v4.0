@@ -1,0 +1,83 @@
+
+.gradient-background {
+    background: linear-gradient(320deg, hwb(172 0% 2%), #2bbbe3, hsl(293, 73%, 64%));
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+  }
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.carousel{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.img-fluid{
+
+  border: 7px solid rgba(50.2, 50.2, 50.2, 0.4);
+  height:60%;
+  width:60%;
+  border-radius: 50%;
+}
+a{
+  text-decoration: none;
+}
+.chatbot img{
+  width: 80px;
+}
+.chatbot{
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 10;  
+  shape-outside: margin-box; 
+  width: 80px;
+}
+.chatbot :hover{
+  width: 85px;
+  transition:0.2s ease-out;
+}
+
+.featureFirst :hover{
+  width: 103%;
+  transition: 0.4s ease-out;
+}
+
+.featureSecond :hover{
+  width: 103%;
+  transition: 0.4s ease-out;
+}
+
+.featureThird :hover{
+  width: 103%;
+  transition: 0.4s ease-out;
+}
+.footer{
+  background-color: whitesmoke;
+}
+.footertext{
+  text-decoration: none;
+}
+.footer {
+  background: linear-gradient(300deg, hsl(293, 73%, 64%), #2bbbe3,hwb(6 0% 2%));
+  background-size: 180% 180%;
+  animation: gradient-animation 5s ease infinite;
+}
+@keyframes footer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
