@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap");
+
+.todobox {
+  margin-left: 200px;
+  padding: 0;
+  background-color: #f4ce14;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.A {
+  width: 700px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  background-color: #eee;
+}
+
+.B {
+  width: 700px;
+  height: 70px;
+}
+
+.C {
+  border-radius: 10px 10px 0 0;
+  background-color: #45474b;
+  text-align: center;
+  color: #eee;
+}
+
+.C h1 {
+  padding-top: 10px;
+}
+
+.D {
+  display: flex;
+  align-items: center;
+}
+
+.styled-input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 0 10px 0 20px;
+  box-sizing: border-box;
+  background-color: #eee;
+}
+
+#new-task {
+  height: 50px;
+}
+
+#task-date {
+  margin: 0 10px 0 0;
+  cursor: text;
+}
+
+#add-task-button {
+  padding: 0 20px;
+  border: 1px solid #222831;
+  border-radius: 10px;
+  margin: 0 20px 0 0;
+  box-sizing: border-box;
+  background-color: #f4ce14;
+  color: #222831;
+  font-size: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#add-task-button:hover {
+  background-color: #e1bf15;
+  color: #222831;
+}
+
+#add-task-button:active {
+  transform: scale(0.8);
+}
+
+#add-task-button.animated {
+  animation: bounce 3s ease infinite;
+}
+
+.E {
+  height: 50px;
+  margin: 0 0 10px 0;
+}
+
+#deleteButton {
+  height: 50px;
+  width: 100px;
+  padding: 5px;
+  font-size: 15px;
+  border: 1px solid #222831;
+  border-radius: 10px;
+  margin: 0 20px 0 0;
+  box-sizing: border-box;
+  background-color: #f4ce14;
+  color: #222831;
+  cursor: pointer;
+  float: right;
+}
+
+#deleteButton:hover {
+  background-color: #e1bf15;
+  color: #222831;
+}
+
+#deleteButton:active {
+  transform: scale(0.9);
+}
+
+#deleteButton.animated {
+  animation: bounce 3s ease infinite;
+}
+
+.J {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.btn.animated {
+  animation: bounce 3s ease infinite;
+}
+
+.editTask {
+  background-color: #ffcc00;
+}
+
+.doneTask {
+  background-color: #00cc66;
+}
+
+.deleteTask {
+  background-color: #ff5757;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: lightgray;
+}
+
+.limit-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.F {
+  height: auto;
+  width: 100%;
+  background-color: #eee;
+}
+
+.popup {
+  position: fixed;
+  bottom: -60px;
+  right: 10px;
+  background: #00adb5;
+  padding: 15px 40px;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: #222831;
+  border-radius: 40px;
+  animation: popup 5s ease-in-out;
+}
+
+@keyframes popup {
+  10%,
+  90% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: -60px;
+  }
+}
+
+.author-text {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
