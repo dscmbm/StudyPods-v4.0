@@ -1,1 +1,37 @@
+This project is a spam detection machine learning model implemented in Python. The goal is to classify messages as either "ham" (non-spam) or "spam" based on their content. Here's a brief description of the project:
 
+Objective: The objective of this project is to develop a machine learning model that can accurately classify messages as spam or non-spam.
+
+Techniques Used:
+- Data Cleaning: Initial cleaning steps include removing unnecessary columns, renaming columns, handling missing values, and removing duplicates.
+- Exploratory Data Analysis (EDA): EDA is performed to gain insights into the distribution of spam and non-spam messages, visualize the data, and understand the characteristics of each class.
+- Text Preprocessing: Text preprocessing steps include converting text to lowercase, tokenization, removing special characters, stopwords, and punctuation, as well as stemming.
+- Feature Engineering: Features such as the number of characters, words, and sentences are extracted from the text data to provide additional information for model training.
+- Text Vectorization: Text data is transformed into numerical vectors using techniques like TF-IDF (Term Frequency-Inverse Document Frequency).
+- Model Building: Several classification algorithms are trained and evaluated, including Gaussian Naive Bayes, Multinomial Naive Bayes, Bernoulli Naive Bayes, Support Vector Machine, Logistic Regression, Decision Tree, Random Forest, AdaBoost, Bagging, Extra Trees, Gradient Boosting, and XGBoost.
+- Model Evaluation: Model performance is evaluated using accuracy and precision metrics, and confusion matrices.
+- Model Improvement: Techniques such as changing parameters, applying feature scaling, exploring different algorithms, and ensemble methods like Voting Classifier and Stacking Classifier are used to improve model performance.
+- Deployment: Finally, the best performing model (Multinomial Naive Bayes) is selected, trained on the entire dataset, and deployed. The TF-IDF vectorizer and the trained model are saved using pickle for future use.
+
+Libraries Used:
+- NumPy and Pandas for data manipulation and analysis.
+- Matplotlib and Seaborn for data visualization.
+- NLTK for natural language processing tasks such as tokenization, stemming, and stopwords removal.
+- Scikit-learn for machine learning algorithms, preprocessing, and model evaluation.
+- WordCloud for generating word clouds.
+- XGBoost for gradient boosting algorithm.
+- Pickle for saving the trained model and vectorizer.
+
+Approach:
+- The project starts with data cleaning and exploration to understand the dataset.
+- Text preprocessing is performed to convert raw text into a format suitable for machine learning models.
+- Features are engineered from the text data to improve model performance.
+- Various classification algorithms are trained and evaluated.
+- Model performance is continuously monitored and improved using different techniques.
+- The best performing model is selected and deployed for real-world use.
+
+Overall, this project demonstrates the end-to-end process of building a spam detection system using machine learning techniques and Python libraries.
+
+Thanks
+Team AI Innovators: Hardik Daga (Team Lead), Anushka Mathur, Gitesh Soni and Harshit Singhal
+Mentor: Nikhil Goyal
