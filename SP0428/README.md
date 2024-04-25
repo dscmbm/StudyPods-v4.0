@@ -12,4 +12,3 @@ https://github.com/hemang111/Forest-Fire-System/assets/85540417/4e2ab729-daf3-42
 This Project is done by Technothars, MBM Studybot team with theme AI & ML.
 It is a Study project work, it is not done for commercial reasons
 ``
-

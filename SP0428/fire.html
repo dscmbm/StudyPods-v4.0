@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crime Prediction</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.9.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <link href="./static/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="bg-base-100 shadow-md">
+    <div class="container mx-auto flex justify-between items-center py-4">
+      <h1 class="text-xl font-bold">Crime Prediction</h1>
+      <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost">Settings</label>
+        <ul tabindex="-1" class="dropdown-content menu shadow bg-base-100 rounded-box w-56">
+          <li><a href="#">Check on Map</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto py-12">
+    <h2 class="text-2xl font-bold mb-6">Predict the probability of Crime Occurence</h2>
+
+    <form action="/predict" method="post" class="flex flex-col gap-4">
+      <div class="input-group">
+        <label for="temperature" class="input-group-label">Temperature</label>
+        <input type="number" id="temperature" name="Temperature" class="input input-bordered" placeholder="Temperature in Celsius">
+      </div>
+      <div class="input-group">
+        <label for="oxygen" class="input-group-label">Oxygen</label>
+        <input type="number" id="oxygen" name="Oxygen" class="input input-bordered" placeholder="Oxygen content in ppm">
+      </div>
+      <div class="input-group">
+        <label for="humidity" class="input-group-label">Humidity</label>
+        <input type="number" id="humidity" name="Humidity" class="input input-bordered" placeholder="Humidity %">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Predict Probability</button>
+    </form>
+
+    <div class="mt-4">
+      <p class="text-lg font-bold">Prediction:</p>
+      <p id="pred"></p>
+    </div>
+  </main>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
