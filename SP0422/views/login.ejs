@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheets/login.css">
+
+</head>
+
+
+<body>
+
+    <div class="canvas">
+
+
+
+        <div class="fly">
+
+            <div class="helmet"></div>
+            <div class="glitter"></div>
+
+            <div class="alien">
+                <div class="topLeft"></div>
+                <div class="topRight"></div>
+                <div class="eyes"></div>
+                <div class="eyebrows"></div>
+                <div class="mouth"></div>
+            </div>
+
+            <div class="middle"></div>
+
+            <div class="ufo">
+                <div class="lights"></div>
+                <div class="legs"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navigation">
+        
+        <h1>
+            <span class="c">C</span>
+            <span class="H">H</span>
+            <span class="a">A</span>
+            <span class="t">T</span>
+            <span class="dash"></span>
+            <span class="h">h</span>
+            <span class="u">u</span>
+            <span class="b">b</span>
+        </h1>
+
+    </nav>
+
+    <div class="container">
+        <div class="main">
+            <form action="#">
+                <input id="roomName" type="text" placeholder="Enter Room Name" style="margin-bottom: -18px;">
+                <input id="userName" type="text" placeholder="Enter  User  Name" style="height:80px">
+                <div style="display: flex; justify-content:space-between">
+                    
+                    <button type="submit" id="joinBtn" class="btn btn-outline-danger"
+                    style="margin-top: 40px;  width:48%; cursor:pointer; outline:none;border-radius:30px; border:none;background-color:rgb(237, 57, 57);font-size:larger;color:aliceblue"
+                    ">Join --></button>
+                    
+                    <button type="submit" id="createBtn" class="btn btn-outline-danger"
+                    style="margin-top: 40px;height:50px;border-radius:30px;  width:48%; cursor:pointer; outline:none; border:none;background-color:rgb(24, 125, 198);font-size:larger;color:aliceblue"
+                    ">Create Room!</button>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const list = document.querySelectorAll('.list')
+
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink))
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    const roomNameInput = document.getElementById("roomName")
+    const userNameInput = document.getElementById('userName');
+    
+    
+    joinBtn.addEventListener("click", async (e) => {
+        
+        const roomName = roomNameInput.value;
+        const userName = userNameInput.value;
+        // save messagge api calling by axios http request.
+        console.log(roomName, userName);
+        let response = await axios.post('/user/login', { roomName, userName })
+        .catch(function (error) {
+            console.error('Error making POST request:', error);
+        });
+        
+        const baseUrl = "http://localhost:5000/chat/";
+        const queryParams = {
+            roomName: roomNameInput.value,
+            userName: userNameInput.value,
+        };
+        const queryString = Object.keys(queryParams)
+        .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(queryParams[key])}`)
+        .join('&');
+        
+        
+        
+        // Constructing the final URL
+        const ChatRoomUrl = `${baseUrl}?${queryString}`;
+        window.location.href = ChatRoomUrl;
+        
+    })
+    
+    
+    
+    createBtn.addEventListener("click", async (e) => {
+        
+        const roomName = roomNameInput.value;
+        const userName = userNameInput.value;
+        // save messagge api calling by axios http request.
+        console.log(roomName, userName);
+        let response = await axios.post('/user/signup', { roomName, userName })
+        .catch(function (error) {
+            console.error('Error making POST request:', error);
+            
+        });
+        
+        console.log(response)
+        const baseUrl = "http://localhost:5000/chat/";
+        const queryParams = {
+            roomName: roomNameInput.value,
+            userName: userNameInput.value,
+        };
+        const queryString = Object.keys(queryParams)
+            .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(queryParams[key])}`)
+            .join('&');
+
+
+
+        // Constructing the final URL
+        const ChatRoomUrl = `${baseUrl}?${queryString}`;
+        window.location.href = ChatRoomUrl;
+
+    })
+</script>
+
+</html>

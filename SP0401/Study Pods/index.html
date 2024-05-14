@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All-in-one Tool Hub</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div id="navlogo">
+                <div><img src="image.png" alt="logo" id="nav_image" /></div>
+                <div id="nav_toolhub"><b>Tool Hub</b></div>
+
+            </div>
+
+            <ul style="list-style: none">
+                <li class="navlist"><a href="../index.html" class="nav_a">Home</a></li>
+                <li class="navlist"><a href="index.html" class="nav_a">Tool Hub</a></li>
+                <li class="navlist"><a href="#tools" class="nav_a">Tools</a></li>
+                <li class="navlist"><a href="#about" class="nav_a">About Us</a></li>
+                <li class="navlist"><a href="#contact" class="nav_a">Contact Us</a></li>
+                <li class="navlist"><a href="login.html" class="nav_a">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="home">
+            <video autoplay loop muted plays-inline class="background_clip">
+                <source src="bg_vdo.mp4" type="video/mp4" />
+            </video>
+            <div>
+                <h1 class="welcome-text">Welcome to ToolHub</h1>
+            </div>
+
+        </div>
+        <div class="grid-container" id="tools" style="background-color: rgb(181, 193, 238);">
+            <div class="features">Tools</div>
+
+            <a href="Calculator/index.html" class="image-link" id="img1">
+                <div class="image-container">
+                    <img src="cal.webp" alt="Calculator">
+                    <div class="overlay">Calculator</div>
+                </div>
+
+            </a>
+            <a href="to_do_list/index.html" class="image-link" id="img2">
+                <div class="image-container">
+                    <img src="todolist.jpg" alt="To Do List">
+                    <div class="overlay">To Do List</div>
+                </div>
+            </a>
+            <a href="Temperature_Convertor/index.html" class="image-link" id="img3">
+                <div class="image-container">
+                    <img src="temperatureconvertor.jpg" alt="Temperature Converter">
+                    <div class="overlay">Temperature Converter</div>
+                </div>
+            </a>
+            <a href="weather/index.html" class="image-link" id="img4">
+                <div class="image-container">
+                    <img src="weatherapp.webp" alt="Weather App">
+                    <div class="overlay">Weather App</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="about" id="about" style="background-color:rgb(206, 233, 242); ">
+            <div class="grid-container" id="tools">
+                <div class="features">About Us</div>
+
+                <a href="https://www.linkedin.com/in/pinki-pinki-b8a454291" class="image-link" id="img1">
+                    <div class="image-container">
+                        <img src="pinki.jpeg" alt="pinki">
+                        <div class="overlay">Pinki || CSE || II YEAR</div>
+                    </div>
+
+                </a>
+                <a href="https://www.linkedin.com/in/neetu-chaudhary-ab1898257" class="image-link" id="img2">
+                    <div class="image-container">
+                        <img src="neetu.jpeg" alt="neetu">
+                        <div class="overlay">Neetu (Team Lead) || CSE || II YEAR</div>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/suman-rajbohra-1a1169291" class="image-link" id="img3">
+                    <div class="image-container">
+                        <img src="suman.jpeg" alt="suman">
+                        <div class="overlay">Suman || CSE || II YEAR</div>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/harshita-atal-8b5a0b292" class="image-link" id="img4">
+                    <div class="image-container">
+                        <img src="harshita.jpeg" alt="harshita">
+                        <div class="overlay">Harshita || CSE || II YEAR</div>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+        <div class="contact" id="contact">
+            <br>
+            <br>
+            <p style="font-size: 25px;">For contact us send your details here ...</p>
+            <br>
+            <div class="container">
+              <form id="contactForm">
+                <h2>Contact Us</h2>
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          
+
+    </main>
+    <footer id="foot">
+        Made with &hearts; by WEBWHIZ <br>
+        &#169; 1951-2024,mbm.ac.in or its affiliates
+    </footer>
+
+    <script src="script.js"></script>
+</body>

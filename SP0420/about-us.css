@@ -1,0 +1,349 @@
+.aboutUsPage {
+    padding: 40px;
+    background-image: linear-gradient(to right, rgb(255, 0, 0) 0%, #0044ff 100%);
+}
+
+.aboutUsPage > .aboutAniToonHQ {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    padding: 50px;
+    text-align: left;
+    justify-content: center center;
+}
+.aboutUsPage > .aboutAniToonHQ > .AniToonHQicon {
+    margin: 20px;
+}
+.aboutUsPage > .aboutAniToonHQ > .AniToonHQicon > img {
+    margin: 20px;
+    width: 100%;
+}
+.aboutUsPage > .aboutAniToonHQ > .AniToonHQintroduction {
+    padding: 80px;
+}
+
+.aboutUsPage > .aboutAniToonHQ > .AniToonHQintroduction > h1,
+.aboutUsPage > .aboutWebWizards > .WebWizardsintroduction > h1 {
+    color: gold;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    font-size: 60px;
+    font-weight: 900;
+}
+.aboutUsPage > .aboutAniToonHQ > .AniToonHQintroduction > p,
+.aboutUsPage > .aboutWebWizards > .WebWizardsintroduction > p {
+    color: white;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.aboutUsPage > .aboutWebWizards {
+    padding: 50px;
+    text-align: left;
+}
+
+.aboutUsPage > .aboutWebWizards > .contributersTeam {
+    color: gold;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: 900;
+    margin: 30px auto;
+}
+
+.leader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.minor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.leader .contributer {
+    background-color: rgba(255, 255, 255, 0.338);
+    /* background-image: linear-gradient(to right, yellow 0%, #ff8400 100%); */
+    border-radius: 50px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    width: 40vw;
+    min-width: 350px;
+}
+.minor .contributer {
+    background-color: rgba(255, 255, 255, 0.338);
+    /* background-image: linear-gradient(to right, yellow 0%, #ff8400 100%); */
+    border-radius: 50px;
+    margin: 20px auto;
+    padding: 30px;
+    text-align: center;
+    width: 25vw;
+    min-width: 350px;
+}
+.contributer > .contributerPhoto > img {
+    width: 60%;
+    border-radius: 1000px;
+    margin: 20px auto;
+    border: 15px solid rgba(0, 0, 0, 0.079);
+}
+.contributerRole {
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 2px 5px;
+    font-weight: 600;
+}
+.founder {
+    border: 2px solid;
+    background-color: rgba(135, 207, 235, 0.223);
+}
+.mentor {
+    border: 2px solid;
+    background-color: rgba(135, 207, 235, 0.223);
+}
+.contributerName {
+    font-size: 30px;
+    font-weight: 700;
+}
+.contributerBatch {
+    font-size: 18px;
+    font-weight: 400;
+}
+.contributerConnection svg {
+    margin: 10px;
+    width: 50px;
+}
+
+
+
+
+/* Your CSS rules for extra small devices go here */
+@media only screen and (max-width: 600px) {
+    .aboutUsPage {
+        padding: 10px;
+    }
+    .aboutUsPage > .aboutAniToonHQ {
+        grid-template-columns: 1fr;
+        padding: 0px;
+    }
+    .aboutUsPage > .aboutAniToonHQ > .AniToonHQicon {
+        margin: 10px;
+    }
+    .aboutUsPage > .aboutAniToonHQ > .AniToonHQicon > img {
+        margin: 10px;
+    }    
+    .aboutUsPage > .aboutAniToonHQ > .AniToonHQintroduction {
+        padding: 10px;
+    }
+
+    .aboutUsPage > .aboutWebWizards {
+        padding: 10px;
+    }
+    .leader .contributer {
+        margin: 20px auto;
+        padding: 5px;
+        width: 80vw;
+        min-width: 300px;
+    }
+    .minor .contributer {
+        margin: 20px auto;
+        padding: 5px;
+        width: 80vw;
+        min-width: 300px;
+    }
+}
+
+/* Your CSS rules for small devices go here */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .aboutUsPage {
+        padding: 20px;
+    }
+    .aboutUsPage > .aboutAniToonHQ {
+        grid-template-columns: 1fr;
+        padding: 0px;
+    }
+    .aboutUsPage > .aboutAniToonHQ > .AniToonHQicon {
+        margin: 10px;
+    }
+    .aboutUsPage > .aboutAniToonHQ > .AniToonHQicon > img {
+        margin: 10px;
+    }    
+    .aboutUsPage > .aboutAniToonHQ > .AniToonHQintroduction {
+        padding: 10px;
+    }
+
+    .aboutUsPage > .aboutWebWizards {
+        padding: 10px;
+    }
+    .leader .contributer {
+        margin: 20px auto;
+        padding: 5px;
+        width: 80vw;
+        min-width: 400px;
+    }
+    .minor .contributer {
+        margin: 20px auto;
+        padding: 5px;
+        width: 80vw;
+        min-width: 400px;
+    }    
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1350px) {
+    .aboutUsPage > .aboutAniToonHQ {
+        grid-template-columns: 1fr 1fr;
+        padding: 0px;
+    }
+    .aboutUsPage > .aboutAniToonHQ > .AniToonHQicon {
+        margin: 10px;
+    }
+    .aboutUsPage > .aboutAniToonHQ > .AniToonHQicon > img {
+        margin: 10px;
+    }    
+    .aboutUsPage > .aboutAniToonHQ > .AniToonHQintroduction {
+        padding: 10px;
+    }
+
+    .aboutUsPage > .aboutWebWizards {
+        padding: 10px;
+    }
+    .leader .contributer {
+        margin: 20px auto;
+        padding: 5px;
+        width: 40vw;
+        min-width: 400px;
+    }
+    .minor .contributer {
+        margin: 20px auto;
+        padding: 5px;
+        width: 40vw;
+        min-width: 400px;
+    }    
+}
+
+/* Your CSS rules for extra large devices go here */
+@media only screen and (min-width: 1350px) and (max-width: 2000px) {
+    .leader .contributer {
+        margin: 20px auto;
+        padding: 5px;
+        width: 40vw;
+        min-width: 400px;
+    }
+    .minor .contributer {
+        margin: 10px;
+        width: 22vw;
+        min-width: 300px;
+    } 
+}
+
+@media only screen and (min-width: 2000px) and (max-width: 5000px) {
+    .aboutUsPage {
+        padding: 100px;
+    }
+
+    .aboutUsPage > .aboutAniToonHQ > .AniToonHQicon {
+        margin: 40px;
+    }
+    .aboutUsPage > .aboutAniToonHQ > .AniToonHQicon > img {
+        margin: 40px;
+    }
+    .aboutUsPage > .aboutAniToonHQ > .AniToonHQintroduction {
+        padding: 120px;
+    }
+
+    .aboutUsPage > .aboutAniToonHQ > .AniToonHQintroduction > h1,
+    .aboutUsPage > .aboutWebWizards > .WebWizardsintroduction > h1 {
+        font-size: 120px;
+    }
+    .aboutUsPage > .aboutAniToonHQ > .AniToonHQintroduction > p,
+    .aboutUsPage > .aboutWebWizards > .WebWizardsintroduction > p {
+        font-size: 50px;
+    }
+    .aboutUsPage > .aboutWebWizards {
+        padding: 80px;
+    }
+    .aboutUsPage > .aboutWebWizards > .contributersTeam {
+        font-size: 100px;
+        font-weight: 900;
+        margin: 50px auto;
+    }
+    
+    .contributer > .contributerPhoto > img {
+        width: 50%;
+    }
+    .contributerRole {
+        font-size: 25px;
+        padding: 8px 20px;
+        border-radius: 50px;
+        font-weight: 600;
+    }
+    .contributerName {
+        font-size: 70px;
+    }
+    .contributerBatch {
+        font-size: 35px;
+    }
+    .contributerConnection svg {
+        margin: 20px;
+        width: 80px;
+    }
+}
+
+@media only screen and (min-width: 5000px) {
+    .aboutUsPage {
+        padding: 150px;
+    }
+
+    .aboutUsPage > .aboutAniToonHQ > .AniToonHQicon {
+        margin: 60px;
+    }
+    .aboutUsPage > .aboutAniToonHQ > .AniToonHQicon > img {
+        margin: 60px;
+    }
+    .aboutUsPage > .aboutAniToonHQ > .AniToonHQintroduction {
+        padding: 150px;
+    }
+
+    .aboutUsPage > .aboutAniToonHQ > .AniToonHQintroduction > h1,
+    .aboutUsPage > .aboutWebWizards > .WebWizardsintroduction > h1 {
+        font-size: 300px;
+    }
+    .aboutUsPage > .aboutAniToonHQ > .AniToonHQintroduction > p,
+    .aboutUsPage > .aboutWebWizards > .WebWizardsintroduction > p {
+        font-size: 150px;
+    }
+    .aboutUsPage > .aboutWebWizards {
+        margin: 100px 160px;
+        padding: 200px;
+    }
+    .aboutUsPage > .aboutWebWizards > .contributersTeam {
+        font-size: 200px;
+        font-weight: 900;
+        margin: 150px auto;
+    }
+    
+    .contributer > .contributerPhoto > img {
+        width: 50%;
+    }
+    .contributerRole {
+        font-size: 80px;
+        padding: 16px 40px;
+        border-radius: 100px;
+        font-weight: 600;
+    }
+    .contributerName {
+        font-size: 170px;
+    }
+    .contributerBatch {
+        font-size: 80px;
+    }
+    .contributerConnection svg {
+        margin: 20px;
+        width: 200px;
+    }
+}

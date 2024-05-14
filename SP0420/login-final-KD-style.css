@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700,800,900&display=swap");
+
+/* Nav bar starts */
+
+::selection {
+    color: white;
+    background-color: black;
+}
+
+.scaleUpTop {
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform-origin: top;
+}
+
+.scaleUpTop:hover {
+    transform: scale(1.1);
+}
+
+.scaleUpCenter {
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform-origin: center;
+}
+
+.scaleUpCenter:hover {
+    transform: scale(1.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    max-height: 100px;
+    width: 100%;
+    background-color: red;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    flex-wrap: wrap;
+    z-index: 1000000;
+    margin-bottom: 0px;
+    background-image: linear-gradient(to right, rgb(255, 0, 0) 0%, #0044ff 100%);
+    min-height: 7vh;
+}
+
+nav>a>img {
+    margin: 10px px;
+    max-width: 300px;
+}
+
+.navList {
+    display: flex;
+    gap: 30px;
+    color: yellow;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navList>li {
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navList>li>a:link {
+    color: yellow;
+    text-decoration: none;
+}
+
+.navList>li>a:visited {
+    color: yellow;
+}
+
+.navList>li>a:hover {
+    color: red;
+    background-color: yellow;
+    margin: 0px -10px 0px -10px;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+
+/* nav svg {
+    width: 40px;
+    height: 40px;
+  } */
+
+#sideBarActive {
+    display: none;
+}
+
+.openSideBarBtn,
+.closeSideBarBtn {
+    display: none;
+}
+
+nav label svg {
+    fill: gold;
+    width: 50px;
+    height: 50px;
+}
+
+.section1 {
+    background-image: url(images/ATHQBG1.jpg);
+    background-attachment: fixed;
+    position: relative;
+    background-size: 100%;
+    height: 100vh;
+    min-height: 850px;
+}
+
+/* Nav bar ends */
+
+
+/* Responsive Mohit's starts  */
+
+@media only screen and (max-width: 410px) {
+    .navList {
+        flex-direction: column;
+        /* align-items: flex-start; */
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 100%;
+        min-height: 100%;
+        background-color: red;
+        transition: 0.2s ease-out;
+    }
+
+    nav>a>img {
+        box-sizing: border-box;
+        height: auto;
+        width: 294px;
+        padding: 20px 3px;
+        justify-content: flex-start;
+    }
+
+    .navList>li>a {
+        margin: 50px auto;
+        padding: 50px;
+    }
+
+    .openSideBarBtn,
+    .closeSideBarBtn {
+        padding: 2px 3px;
+        display: block;
+    }
+
+    #sideBarActive:checked~.navList {
+        right: 0;
+    }
+
+    #sideBarActive:checked~#overlay {
+        min-height: 100%;
+        min-width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+    .navList>li {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 410px) and (max-width: 600px) {
+    .navList {
+        flex-direction: column;
+        /* align-items: flex-start; */
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 100%;
+        min-height: 100%;
+        background-color: red;
+        transition: 0.2s ease-out;
+    }
+
+    .navList a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+
+    .navList>li>a {
+        margin: 50px auto;
+        padding: 50px;
+    }
+
+    .openSideBarBtn,
+    .closeSideBarBtn {
+        padding: 20px 30px;
+        display: block;
+    }
+
+    #sideBarActive:checked~.navList {
+        right: 0;
+    }
+
+    #sideBarActive:checked~#overlay {
+        min-height: 100%;
+        min-width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+    .navList>li {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .navList {
+        flex-direction: column;
+        /* align-items: flex-start; */
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 100%;
+        min-height: 100%;
+        background-color: red;
+        transition: 0.2s ease-out;
+    }
+
+    .navList a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+
+    .navList>li>a {
+        margin: 50px auto;
+        padding: 50px;
+    }
+
+    .openSideBarBtn,
+    .closeSideBarBtn {
+        padding: 20px 30px;
+        display: block;
+    }
+
+    #sideBarActive:checked~.navList {
+        right: 0;
+    }
+
+    #sideBarActive:checked~#overlay {
+        min-height: 100%;
+        min-width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+    .navList>li {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .navList>li {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 2000px) {
+    .navList>li {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 2000px) and (max-width: 5000px) {
+    .navList>li {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 5000px) {
+    .navList>li {
+        font-size: 40px;
+    }
+}
+
+/* Responsive Mohit's ends */
+
+.bodycontainer{
+    margin: 0;
+    background: url(portal.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.wrap {
+    background: transparent;
+    color: rgb(0, 0, 0);
+    width: 400px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+/* Login */
+.wrap h1 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 750;
+}
+
+/* inputbox background*/
+.inputbox {
+    /* what difference does this make
+   .wrap .input and .input */
+    /* display: flex;
+   justify-content: center;
+   align-items: center; */
+    position: relative;
+    /* explain this  */
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    /* margin: 50px; -------------------ask why this creates error */
+}
+
+/* inputbox boxes */
+.inputbox input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.368);
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 510;
+    color: black;
+    padding: 20px 45px 20px 20px;
+}
+
+.inputbox input::placeholder {
+    color: black;
+}
+
+/* inputbox icons */
+.inputbox i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: black;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.button {
+    width: 100%;
+    height: 40px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.571);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.button:hover{
+   background-color:#333;
+   color: white;
+   font-weight: 600;
+}
+
+.register {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.register p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+    color: white;
+}

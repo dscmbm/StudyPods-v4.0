@@ -1,0 +1,21 @@
+# FaceMeter : FACE RECOGNITION and DISTANCE ESTIMATION
+# POD03
+MEMBERS:
+  1. Shivender Singh Thakur (lead)
+  2. Manoj Bhatt 
+  3. Umar Deen
+  4. Yatharth Kanojiya 
+
+
+1.Project Estimate the distance of the face and also recognize it 
+2.Using the library dlib genuinly building on the system is time consuming and this is the base library for FACE RECOGNITION.
+3.Distance is estimated and totally depend on the camera.
+4.Multiple face distance is bit laggy and refresh after some time but face is recognized immediatly.
+here by we attatch a video
+#About the Directory  Structure 
+ "Assest" consist of the images with name followed by extension only [".png",".jpg"]
+#There is an environment attatch with it possibly run on the linux x86_64.
+just hit the command after in the "SPO403"
+"source bin/activate"
+"haarcascade_frontalface_default.xml" helps in finding the estimation of face distance from camera
+

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Exchange</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div id="navlogo">
+                <div><img src="logo.jpeg" alt="logo" id="nav_image" /></div>
+
+
+            </div>
+
+            <ul style="list-style: none">
+                <li class="navlist"><a href="../index.html" class="nav_a">Home</a></li>
+                <li class="navlist"><a href="index.html" class="nav_a">Book Exchange</a></li>
+                <li class="navlist"><a href="#bkfm" class="nav_a">Form</a></li>
+                <li class="navlist"><a href="#about" class="nav_a">About Us</a></li>
+                <li class="navlist"><a href="#contact" class="nav_a">Contact Us</a></li>
+                <li class="navlist"><a href="login.html" class="nav_a">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="slideshow-container">
+
+
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="img1.jpeg" style="width:100%">
+                <div class="text">Book Exchange</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="img2.jpeg" style="width:100%">
+                <div class="text">Book Exchange</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="img3.jpeg" style="width:100%">
+                <div class="text">Book Exchange</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="img4.jpeg" style="width:100%">
+                <div class="text">Book Exchange</div>
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div id="btn">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <div class="bkfm" id="bkfm">
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <h2>Add Book Details</h2>
+                <form id="bookForm">
+                    <div class="form-group">
+                        <label for="bookTitle">Book Title:</label>
+                        <input type="text" id="bookTitle" name="bookTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookAuthor">Author:</label>
+                        <input type="text" id="bookAuthor" name="bookAuthor" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="availability">Availability:</label>
+                        <select id="availability" name="availability" required>
+                            <option value="available">Available</option>
+                            <option value="wanted">Wanted</option>
+                        </select>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="bookImage">Book Image:</label>
+                        <input type="file" id="bookImage" name="bookImage" accept="image/*" required>
+                    </div>
+                   
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        
+        <div id="bookDetailsContainer" class="book-details-container"></div>
+        
+
+
+
+        <div class="about" id="about" style="background-color:rgb(206, 233, 242); ">
+            <div class="grid-container" id="tools">
+                <div class="features">About Us</div>
+
+                <a href="https://www.linkedin.com/in/pinki-pinki-b8a454291" class="image-link" id="img1">
+                    <div class="image-container">
+                        <img src="pinki.jpeg" alt="pinki">
+                        <div class="overlay">Pinki || CSE || II YEAR</div>
+                    </div>
+
+                </a>
+                <a href="https://www.linkedin.com/in/neetu-chaudhary-ab1898257" class="image-link" id="img2">
+                    <div class="image-container">
+                        <img src="neetu.jpeg" alt="neetu">
+                        <div class="overlay">Neetu (Team Lead) || CSE || II YEAR</div>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/suman-rajbohra-1a1169291" class="image-link" id="img3">
+                    <div class="image-container">
+                        <img src="suman.jpeg" alt="suman">
+                        <div class="overlay">Suman || CSE || II YEAR</div>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/harshita-atal-8b5a0b292" class="image-link" id="img4">
+                    <div class="image-container">
+                        <img src="harshita.jpeg" alt="harshita">
+                        <div class="overlay">Harshita || CSE || II YEAR</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <br>
+            <br>
+            <p style="font-size: 25px;">For contact us send your details here ...</p>
+            <br> 
+            <div class="_container">
+                <form id="contactForm">
+                    <h2>Contact Us</h2>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+
+
+    </main>
+    <footer id="foot">
+        Made with &hearts; by WEBWHIZ<br>
+        &#169; 1951-2024,mbm.ac.in or its affiliates
+    </footer>
+
+
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../gdsc"
+		},
+		{
+			"path": "../../../Pythonvs"
+		},
+		{
+			"path": "../../../cpp"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Web Dev"
+	}
+}
