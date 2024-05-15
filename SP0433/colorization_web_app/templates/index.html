@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Colorization</title>
+    <style>
+        body{
+            background-color:  #F96167;
+            text-align: center;
+        }
+        .colorize-btn {
+            background-color: Blue; /* Blue color for the colorize button */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* Changing the choose file button color to green */
+        input[type="file"] {
+            background-color: #28a745; /* Green color for the choose file button */
+            color: Yellow;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        cursor: pointer;
+    }
+    .image-section {
+        color: red;
+        background-position: center center;
+        margin-top: 20px;
+        width: 100%;
+        height: 350px;
+        background-color: #F9E795; /* Yellow background color */
+        padding: 1px 0;
+    }
+    /* Styling for the horizontal grey bar */
+    .horizontal-bar {
+        background-color: #F9E795; /* Yellow color for the bar */
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }
+    .horizontal-bar h1 {
+        color :  #F96167;
+        margin: 20px;
+        font-size: 50px;
+    }
+</style>
+</head>
+<body>
+    <h1 class="horizontal-bar">Image Colorization - ML Innovators</h1>
+    <form action="/colorize" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit" class="colorize-btn">Colorize Image</button>
+    </form>
+    {% if colorized_image %}
+    <div class="image-section">
+        <h2>Colorized Image</h2>
+        <h3>The Colorized Image appear in the Output Folder of the colorization_web_app</h3>
+    </div>
+    {% endif %}
+</body>
+</html>

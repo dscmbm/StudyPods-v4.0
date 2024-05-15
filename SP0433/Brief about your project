@@ -1,1 +1,13 @@
+Imports and Setup: The script begins by importing necessary libraries such as NumPy, OpenCV (cv2), and argparse for parsing command-line arguments. It also defines paths to the model files and sets up an argument parser to accept input image and output directory paths.
 
+Model Loading: It loads the pre-trained colorization model using cv2.dnn.readNetFromCaffe function from the provided .prototxt and .caffemodel files. It also loads pre-computed points for ab channel quantization.
+
+Input Image Processing: The script reads the input black and white image using cv2.imread. It then scales the image and converts it from BGR to LAB color space (cv2.cvtColor). LAB color space separates color information into L (lightness) and ab (color channels).
+
+Colorization: It resizes the L channel to a fixed size and subtracts 50 from it. This processed L channel is passed through the loaded neural network model, which predicts the ab channels for the input L channel.
+
+Post-Processing: The predicted ab channels are resized back to the original image size and concatenated with the original L channel. The resulting LAB image is converted back to the BGR color space using cv2.cvtColor.
+
+Output: The colorized image is saved to the specified output directory
+
+Note : Please Download Model from Readme.md File in Model Folder and Move that File In Model Folder.
